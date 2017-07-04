@@ -21,17 +21,94 @@
 
     <div class="center">
         <p>Print your load before you shoot it... <a href="extras/genericLabel.pdf">Generic Labels</a></p> 
+        
+        <!-- MariaDB data -->
         <p>
-            I'll be moving the SQL stuff over to JSP format soon but I want to clean up the database a bit first.
-        </p>
+        <%
+            Connection connect = null;
+            Statement s = null;
+
+            try {
+                Class.forName("org.mariadb.jdbc.Driver");
+
+                connect = DriverManager.getConnection("jdbc:mariadb://localhost/codeigniter"
+                        + "?user=codeigniter&password=codeigniter");
+
+                s = connect.createStatement();
+
+                String sql = "select name as f1, ProjectileName as f2, BulletWeightGR as f3, Powder as f4, GrainsUsed as f5, avgSpeed as f6, EnergyFootLBS as f7 from AllMyLoads;";
+
+                ResultSet rec = s.executeQuery(sql);
+        %>
+    <table width="85%" border="1" align="center">
+        <tr>
+            <th id="th"> <div align="center">Chamber</div></th>
+            <th id="th"> <div align="center">Proj. Name</div></th>
+            <th id="th"> <div align="center">gr</div></th>
+            <th id="th"> <div align="center">Powder</div></th>
+            <th id="th"> <div align="center">gr</div></th>
+            <th id="th"> <div align="center">FPS</div></th>
+            <th id="th"> <div align="center">FT-LB</div></th>
+            
+        </tr>	
+        
+        <% int rowNum = 0; %>
+        
+        <%while ((rec != null) && (rec.next())) {%>
+        
+        <% if(rowNum %2 == 0){ %>
+        <tr>
+            <td id="td-even"><%=rec.getString("f1")%></td>
+            <td id="td-even"><%=rec.getString("f2")%></td>
+            <td id="td-even"><%=rec.getString("f3")%></td>
+            <td id="td-even"><%=rec.getString("f4")%></td>
+            <td id="td-even"><%=rec.getString("f5")%></td>
+            <td id="td-even"><%=rec.getString("f6")%></td>
+            <td id="td-even"><%=rec.getString("f7")%></td>
+        </tr>
+        <% }else{ %>
+        
+        <tr>
+            <td id="td-odd"><%=rec.getString("f1")%></td>
+            <td id="td-odd"><%=rec.getString("f2")%></td>
+            <td id="td-odd"><%=rec.getString("f3")%></td>
+            <td id="td-odd"><%=rec.getString("f4")%></td>
+            <td id="td-odd"><%=rec.getString("f5")%></td>
+            <td id="td-odd"><%=rec.getString("f6")%></td>
+            <td id="td-odd"><%=rec.getString("f7")%></td>
+        </tr>
+        <% } 
+           rowNum++;
+        %>
         
         
-        
-        
-        
-        
-        
-        
-    </div>
+        <%}%>
+    </table>      
+    <%
+        } catch (Exception e) {
+            // TODO Auto-generated catch block
+            out.println(e.getMessage());
+            e.printStackTrace();
+        }
+
+        try {
+            if (s != null) {
+                s.close();
+                connect.close();
+            }
+        } catch (SQLException e) {
+            // TODO Auto-generated catch block
+            out.println(e.getMessage());
+            e.printStackTrace();
+        }
+    %>
+
+</p>
+
+
+
+
+
+</div>
 
 <jsp:include page="/WEB-INF/jsp/footer.inc.jsp"></jsp:include>
