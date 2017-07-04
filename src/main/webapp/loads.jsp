@@ -28,7 +28,7 @@
             try {
                 Class.forName("org.mariadb.jdbc.Driver");
 
-                connect = DriverManager.getConnection("jdbc:mariadb://192.168.2.245/codeigniter"
+                connect = DriverManager.getConnection("jdbc:mariadb://localhost/codeigniter"
                         + "?user=codeigniter&password=codeigniter");
 
                 s = connect.createStatement();
