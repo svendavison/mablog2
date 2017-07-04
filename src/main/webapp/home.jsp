@@ -25,6 +25,10 @@
 		easy it is to move things over. In addition to these changes, I might even put it into a docker container. 
                 Who knows, but stay tuned because things are bound to change.
         </p>
+        
+        
+        <p><img src="extras/bullElk.jpg" alt="bull elk"/></p>
+        
 </div>
 
 <jsp:include page="/WEB-INF/jsp/footer.inc.jsp"></jsp:include>
