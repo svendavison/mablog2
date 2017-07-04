@@ -15,8 +15,8 @@ import java.text.SimpleDateFormat;
  */
 public class Config {
     	
-	public final static String SITE_NAME = "IMRUnicorn";
-	public final static String TITLE_SITE = "IMRUnicorn";
+	public final static String SITE_NAME = "IMR Unicorn";
+	public final static String TITLE_SITE = "IMR Unicorn";
 	public final static String META_DESCRIPTION = "Welcome to IMRUnicorn";
 	public final static String META_KEYWORDS = "sven, software, java, jsp, IMRUnicorn";
 	    
