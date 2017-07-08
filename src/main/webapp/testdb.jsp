@@ -1,65 +1,22 @@
-<%-- 
-    Document   : testdb
-    Created on : Jul 4, 2017, 2:18:08 PM
-    Author     : svendavison
---%>
-<%@ page import="java.sql.ResultSet" %>
-<%@ page import="java.sql.SQLException" %>
-<%@ page import="java.sql.Statement" %>
-<%@ page import="java.sql.Connection" %>
-<%@ page import="java.sql.DriverManager" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/sql" prefix="sql" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
+<sql:query var="rs" dataSource="jdbc/codeigniter">
+    select * from sample
+</sql:query>
 
 <html>
     <head>
-        <title>ThaiCreate.Com JSP Tutorial</title>
+        <title>DB Test</title>
     </head>
     <body>
 
-        <%
-            Connection connect = null;
-            Statement s = null;
+        <h2>Results</h2>
 
-            try {
-                Class.forName("org.mariadb.jdbc.Driver");
+        <c:forEach var="row" items="${rs.rows}">
+            FName ${row.fname}<br/>
+            lname ${row.lname}<br/>
+        </c:forEach>
 
-                connect = DriverManager.getConnection("jdbc:mariadb://192.168.2.245/codeigniter"
-                        + "?user=codeigniter&password=codeigniter");
-
-                s = connect.createStatement();
-
-                String sql = "SELECT * FROM chamber";
-
-                ResultSet rec = s.executeQuery(sql);
-        %>
-        <table width="600" border="1">
-            <tr>
-                <th width="91"> <div align="center">name</div></th>
-                <th width="98"> <div align="center">link name</div></th>
-            </tr>	
-            <%while ((rec != null) && (rec.next())) {%>
-            <tr>
-                <td><div align="center"><%=rec.getString("name")%></div></td>
-                <td><%=rec.getString("linkName")%></td>
-            </tr>
-            <%}%>
-        </table>      
-        <%
-            } catch (Exception e) {
-                // TODO Auto-generated catch block
-                out.println(e.getMessage());
-                e.printStackTrace();
-            }
-
-            try {
-                if (s != null) {
-                    s.close();
-                    connect.close();
-                }
-            } catch (SQLException e) {
-                // TODO Auto-generated catch block
-                out.println(e.getMessage());
-                e.printStackTrace();
-            }
-        %>
     </body>
 </html>
