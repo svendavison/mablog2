@@ -16,11 +16,11 @@ LIMIT 1;
 -->
 
 <sql:update var="dropSample" dataSource="jdbc/codeigniter">
-    DROP TABLE sample
+    DROP TABLE IF EXISTS sample
 </sql:update>
 
 <sql:update var="dropAllMyLoads" dataSource="jdbc/codeigniter">
-    DROP TABLE AllMyLoads
+    DROP TABLE IF EXISTS AllMyLoads
 </sql:update>
 
 <sql:update var="createSample" dataSource="jdbc/codeigniter">
