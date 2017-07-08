@@ -101,6 +101,9 @@ INSERT INTO `AllMyLoads` (`GroupSize`,`name`,`ProjectileName`,`BulletWeightGR`,`
     </head>
     <body>
 
+        <h1>Tables dropped and data readded!</h1>
+        
+        
         <h2>Results</h2>
 
         <c:forEach var="row" items="${rs.rows}">
