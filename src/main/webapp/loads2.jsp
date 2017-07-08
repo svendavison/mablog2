@@ -25,16 +25,21 @@
         <!-- MariaDB data -->
         <p>
         <%
-            Connection connect = null;
+            Connection connection = null;
             Statement s = null;
 
             try {
                 Class.forName("org.mariadb.jdbc.Driver");
 
-                //connect = DriverManager.getConnection("jdbc:mariadb://IMRUdb:3306/codeigniter?user=codeigniter&password=codeigniter");
-                connect = DriverManager.getConnection("jdbc:mariadb://localhost:3306/codeigniter?user=codeigniter&password=codeigniter");
 
-                s = connect.createStatement();
+            String url = request.getRequestURL().toString();
+            if (url.contains(":8459/")) {
+                connection = DriverManager.getConnection("jdbc:mariadb://localhost:3306/codeigniter?user=codeigniter&password=codeigniter");
+            } else {
+                connection = DriverManager.getConnection("jdbc:mariadb://IMRUdb:3306/codeigniter?user=codeigniter&password=codeigniter");
+            }
+            
+                s = connection.createStatement();
 
                 String sql = "select fname as f1, lname as f2 from sample;";
 
@@ -79,7 +84,7 @@
         try {
             if (s != null) {
                 s.close();
-                connect.close();
+                connection.close();
             }
         } catch (SQLException e) {
             // TODO Auto-generated catch block
