@@ -22,15 +22,13 @@
 <div class="center">
 	<p>I'm slowly rebuilding this in JSP with a database back-end
 		instead of being so closely coupled to code-igniter. We'll see how
-		easy it is to move things over.</p>
-
-		
-	<%	
-	Date date = new Date();
-	SimpleDateFormat ft = new SimpleDateFormat ("E yyyy.MM.dd 'at' hh:mm:ss a zzz");
-	out.println("<br>Current Date : " + ft.format(date));
-	%>
-
+		easy it is to move things over. In addition to these changes, I might even put it into a docker container. 
+                Who knows, but stay tuned because things are bound to change.
+        </p>
+        
+        
+        <p><img src="extras/bullElk.jpg" alt="bull elk"/></p>
+        
 </div>
 
 <jsp:include page="/WEB-INF/jsp/footer.inc.jsp"></jsp:include>
