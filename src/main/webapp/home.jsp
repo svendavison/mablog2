@@ -26,6 +26,11 @@
                 Who knows, but stay tuned because things are bound to change.
         </p>
         
+        <p>
+            I've now implemented jenkins to do continuous integration. When I publish changes to the master branch of the project in 
+            github, jenkins will automatically build and deploy the war to my tomcat instance.
+        </p>
+        
         
         <p><img src="extras/bullElk.jpg" alt="bull elk"/></p>
         
