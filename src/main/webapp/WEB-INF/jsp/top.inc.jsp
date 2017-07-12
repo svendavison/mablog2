@@ -18,6 +18,7 @@
     <li class="active"><a href="${url}" data-load="ajax">Home</a></li>
     <li><a href="${url}loads.jsp" data-load="ajax">Loads</a></li>
     <li><a href="${url}about.jsp" data-load="ajax">About</a></li>
+    <li><a href="${url}buildDB.jsp" data-load="ajax">Build DB</a></li>
   </ul>
 </nav>
 
