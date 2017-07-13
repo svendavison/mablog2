@@ -33,7 +33,7 @@
 
 
             String url = request.getRequestURL().toString();
-            if (url.contains(":8459/")) {
+            if (url.contains(":8080/")) {
                 connection = DriverManager.getConnection("jdbc:mariadb://localhost:3306/codeigniter?user=codeigniter&password=codeigniter");
             } else {
                 connection = DriverManager.getConnection("jdbc:mariadb://IMRUdb:3306/codeigniter?user=codeigniter&password=codeigniter");
@@ -48,7 +48,7 @@
     <table width="85%" border="1" align="center">
         <tr>
             <th id="th"> <div align="center">Chamber</div></th>
-            <th id="th"> <div align="center">Proj. Name</div></th>
+            <th id="th"> <div align="center">Projectile Name</div></th>
             <th id="th"> <div align="center">gr</div></th>
             <th id="th"> <div align="center">Powder</div></th>
             <th id="th"> <div align="center">gr</div></th>
