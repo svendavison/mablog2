@@ -48,7 +48,7 @@
     <table width="85%" border="1" align="center">
         <tr>
             <th id="th"> <div align="center">Chamber</div></th>
-            <th id="th"> <div align="center">Projectile Name</div></th>
+            <th id="th"> <div align="center">Proj. Name</div></th>
             <th id="th"> <div align="center">gr</div></th>
             <th id="th"> <div align="center">Powder</div></th>
             <th id="th"> <div align="center">gr</div></th>
