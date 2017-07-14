@@ -20,8 +20,7 @@
         <h2>Results</h2>
 
         <c:forEach var="row" items="${rs.rows}">
-            FName ${row.fname}<br/>
-            lname ${row.lname}<br/>
+            FName ${row.fname} lname ${row.lname}<br/>
         </c:forEach>
 
     </body>

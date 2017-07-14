@@ -12,41 +12,27 @@
 <%@ page import="java.sql.Connection" %>
 <%@ page import="java.sql.DriverManager" %>
 
+<%@ taglib uri="http://java.sun.com/jsp/jstl/sql" prefix="sql" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
+<sql:query var="rs" dataSource="jdbc/codeigniter">
+    select name, ProjectileName, BulletWeightGR, Powder, GrainsUsed, avgSpeed, EnergyFootLBS from AllMyLoads
+</sql:query>
+
 <%
     String title = String.format("%s: Loads", ninja.sven.imrunicorn.Config.SITE_NAME);
     request.setAttribute("pageTitle", title);
     request.setAttribute("pageHeading", title);
 %>
+
 <jsp:include page="/WEB-INF/jsp/header.inc.jsp"></jsp:include>
 
     <div class="center">
         <p>Print your load before you shoot it... <a href="extras/genericLabel.pdf">Generic Labels</a></p> 
 
-        <!-- MariaDB data -->
-        <p>
-        <%
-            Connection connection = null;
-            Statement s = null;
 
-            try {
-                Class.forName("org.mariadb.jdbc.Driver");
-
-
-            String url = request.getRequestURL().toString();
-            if (url.contains(":8080/")) {
-                connection = DriverManager.getConnection("jdbc:mariadb://localhost:3306/codeigniter?user=codeigniter&password=codeigniter");
-            } else {
-                connection = DriverManager.getConnection("jdbc:mariadb://IMRUdb:3306/codeigniter?user=codeigniter&password=codeigniter");
-            }
-            
-                s = connection.createStatement();
-
-                String sql = "select name as f1, ProjectileName as f2, BulletWeightGR as f3, Powder as f4, GrainsUsed as f5, avgSpeed as f6, EnergyFootLBS as f7 from AllMyLoads;";
-
-                ResultSet rec = s.executeQuery(sql);
-        %>
-    <table width="85%" border="1" align="center">
-        <tr>
+        <table width="85%" border="1" align="center">
+            <tr>
             <th id="th"> <div align="center">Chamber</div></th>
             <th id="th"> <div align="center">Proj. Name</div></th>
             <th id="th"> <div align="center">gr</div></th>
@@ -54,65 +40,36 @@
             <th id="th"> <div align="center">gr</div></th>
             <th id="th"> <div align="center">FPS</div></th>
             <th id="th"> <div align="center">FT-LB</div></th>
-
-        </tr>	
+        </tr>
 
         <% int rowNum = 0; %>
-
-        <%while ((rec != null) && (rec.next())) {%>
-
-        <% if (rowNum % 2 == 0) {%>
+        <c:forEach var="row" items="${rs.rows}">
+            <% if (rowNum % 2 == 0) {%>
         <tr>
-            <td id="td-even"><%=rec.getString("f1")%></td>
-            <td id="td-even"><%=rec.getString("f2")%></td>
-            <td id="td-even"><%=rec.getString("f3")%></td>
-            <td id="td-even"><%=rec.getString("f4")%></td>
-            <td id="td-even"><%=rec.getString("f5")%></td>
-            <td id="td-even"><%=rec.getString("f6")%></td>
-            <td id="td-even"><%=rec.getString("f7")%></td>
+            <td id="td-even">${row.name}</td>
+            <td id="td-even">${row.ProjectileName}</td>
+            <td id="td-even">${row.BulletWeightGR}</td>
+            <td id="td-even">${row.Powder}</td>
+            <td id="td-even">${row.GrainsUsed}</td>
+            <td id="td-even">${row.avgSpeed}</td>
+            <td id="td-even">${row.EnergyFootLBS}</td>
         </tr>
         <% } else {%>
 
         <tr>
-            <td id="td-odd"><%=rec.getString("f1")%></td>
-            <td id="td-odd"><%=rec.getString("f2")%></td>
-            <td id="td-odd"><%=rec.getString("f3")%></td>
-            <td id="td-odd"><%=rec.getString("f4")%></td>
-            <td id="td-odd"><%=rec.getString("f5")%></td>
-            <td id="td-odd"><%=rec.getString("f6")%></td>
-            <td id="td-odd"><%=rec.getString("f7")%></td>
+            <td id="td-odd">${row.name}</td>
+            <td id="td-odd">${row.ProjectileName}</td>
+            <td id="td-odd">${row.BulletWeightGR}</td>
+            <td id="td-odd">${row.Powder}</td>
+            <td id="td-odd">${row.GrainsUsed}</td>
+            <td id="td-odd">${row.avgSpeed}</td>
+            <td id="td-odd">${row.EnergyFootLBS}</td>
         </tr>
-        <% }
+        <% } /* close IF */
             rowNum++;
         %>
-
-
-        <%}%>
-    </table>      
-    <%
-        } catch (Exception e) {
-            // TODO Auto-generated catch block
-            out.println(e.getMessage());
-            e.printStackTrace();
-        }
-
-        try {
-            if (s != null) {
-                s.close();
-                connection.close();
-            }
-        } catch (SQLException e) {
-            // TODO Auto-generated catch block
-            out.println(e.getMessage());
-            e.printStackTrace();
-        }
-    %>
-
-</p>
-
-
-
-
+        </c:forEach>
+    </table>     
 
 </div>
 
