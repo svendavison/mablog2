@@ -18,7 +18,7 @@
                             <jsp:include page="/WEB-INF/jsp/header.inc.jsp"></jsp:include>
 
 
-                            <div class="center fadein" id="twocol">
+                            <div class="center fadein redshadow" id="twocol">
                                 <p>
                                     Dramatically supply front-end metrics via goal-oriented functionalities. Globally fabricate virtual results before value-added
                                     architectures. Appropriately iterate leading-edge resources vis-a-vis tactical innovation.
