@@ -20,5 +20,11 @@
 <script>var url = {stic : '${staticUrl}'}</script>
 <script src="${staticUrl}js/loader.js"></script>
 
+<!-- manual loading -->
+<script src="${staticUrl}js/ajph.js"></script>
+<script src="${staticUrl}js/bootstrap.js"></script>
+<script src="${staticUrl}js/common.js"></script>
+<script src="${staticUrl}js/tipsy.js"></script>
+
 </body>
 </html>
