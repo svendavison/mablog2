@@ -1,12 +1,27 @@
-<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@taglib uri="http://java.sun.com/jsp/jstl/sql" prefix="s" %>
- 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-"http://www.w3.org/TR/html4/loose.dtd">
- 
+<%-- 
+    Document   : help-me
+    Created on : Jul 4, 2017, 1:42:06 PM
+    Author     : benspelledabc
+--%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page import="java.text.SimpleDateFormat" %>
+<%@ page import="java.util.Calendar" %>
+<%@ page import="java.util.Date" %>
+<%@ page import="java.util.GregorianCalendar" %>
 
- <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
+
+<%
+    String title = String.format("%s: Help-Me", ninja.sven.imrunicorn.Config.SITE_NAME);
+    request.setAttribute("pageTitle", title);
+    request.setAttribute("pageHeading", title);
+%>
+
+<jsp:include page="/WEB-INF/jsp/header.inc.jsp"></jsp:include>
+<div class="center fadein" id="twocol">
+    
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ page import="java.sql.ResultSet" %>
 <%@ page import="java.sql.SQLException" %>
 <%@ page import="java.sql.Statement" %>
@@ -17,13 +32,6 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
 
-
-<html>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Authentication page</title>
-  </head>
-  <body>
     <c:if test="${ empty param.username or empty param.password}">
       <c:redirect url="login.jsp" >
               <c:param name="errMsg" value="Please Enter UserName and Password" />
@@ -60,5 +68,6 @@
  
     </c:if>
  
-  </body>
-</html>
+    
+</div>
+<jsp:include page="/WEB-INF/jsp/footer.inc.jsp"></jsp:include>
