@@ -15,8 +15,21 @@ WHERE NOT EXISTS (SELECT * FROM sample
 LIMIT 1;
 -->
 
-<sql:update var="dropSample" dataSource="jdbc/codeigniter">
-    DROP TABLE IF EXISTS sample
+<sql:update var="dropUsers" dataSource="jdbc/codeigniter">
+    DROP TABLE IF EXISTS users
+</sql:update>
+
+<sql:update var="createUsers" dataSource="jdbc/codeigniter">
+CREATE TABLE `users` (
+  `id` int(10) unsigned NOT NULL auto_increment,
+  `username` varchar(45) NOT NULL,
+  `password` varchar(45) NOT NULL,
+  PRIMARY KEY  (`id`)
+)
+</sql:update>
+
+<sql:update var="addUser" dataSource="jdbc/codeigniter">
+    INSERT INTO `users` (`id`,`username`,`password`) VALUES(1,'admin','nimda')
 </sql:update>
 
 <sql:update var="dropAllMyLoads" dataSource="jdbc/codeigniter">
