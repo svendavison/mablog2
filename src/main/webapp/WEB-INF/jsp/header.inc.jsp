@@ -19,7 +19,6 @@
         <link rel="stylesheet" href="${url}css/common.css" />
         <link rel="stylesheet" href="${url}css/ajph.css" />
         <link rel="stylesheet" href="${url}css/tipsy.css" />
-        <link rel="stylesheet" href="${url}css/imrunicorn.css" />
 
     </head>
     <body>
