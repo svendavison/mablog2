@@ -3,14 +3,14 @@
     Created on : Jul 4, 2017, 1:42:06 PM
     Author     : benspelledabc
 --%>
-    <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-        <%@ page import="java.text.SimpleDateFormat" %>
-            <%@ page import="java.util.Calendar" %>
-                <%@ page import="java.util.Date" %>
-                    <%@ page import="java.util.GregorianCalendar" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page import="java.text.SimpleDateFormat" %>
+<%@ page import="java.util.Calendar" %>
+<%@ page import="java.util.Date" %>
+<%@ page import="java.util.GregorianCalendar" %>
 
 
-                        <%
+<%
     String title = String.format("%s", ninja.sven.imrunicorn.Config.SITE_NAME);
     request.setAttribute("pageTitle", title);
     request.setAttribute("pageHeading", title);

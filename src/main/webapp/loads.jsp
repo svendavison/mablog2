@@ -4,7 +4,7 @@
     Author     : benspelledabc
 --%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-         pageEncoding="UTF-8"%>
+pageEncoding="UTF-8"%>
 
 <%@ page import="java.sql.ResultSet" %>
 <%@ page import="java.sql.SQLException" %>
@@ -25,52 +25,66 @@
     request.setAttribute("pageHeading", title);
 %>
 
-<jsp:include page="/WEB-INF/jsp/header.inc.jsp"></jsp:include>
+                                        <jsp:include page="/WEB-INF/jsp/header.inc.jsp"></jsp:include>
 
-    <div class="center">
-        <p>Print your load before you shoot it... <a href="extras/genericLabel.pdf">Generic Labels</a></p> 
+                                        <div class="center fadein" id="twocol">
+                                            <p>Print your load before you shoot it... <a href="extras/genericLabel.pdf">Generic Labels</a></p>
 
 
-        <table width="85%" border="1" align="center">
-            <tr>
-            <th id="th"> <div align="center">Chamber</div></th>
-            <th id="th"> <div align="center">Proj. Name</div></th>
-            <th id="th"> <div align="center">gr</div></th>
-            <th id="th"> <div align="center">Powder</div></th>
-            <th id="th"> <div align="center">gr</div></th>
-            <th id="th"> <div align="center">FPS</div></th>
-            <th id="th"> <div align="center">FT-LB</div></th>
-        </tr>
+                                            <table width="85%" border="1" align="center">
+                                                <tr>
+                                                    <th id="th">
+                                                        <div align="center">Chamber</div>
+                                                    </th>
+                                                    <th id="th">
+                                                        <div align="center">Proj. Name</div>
+                                                    </th>
+                                                    <th id="th">
+                                                        <div align="center">gr</div>
+                                                    </th>
+                                                    <th id="th">
+                                                        <div align="center">Powder</div>
+                                                    </th>
+                                                    <th id="th">
+                                                        <div align="center">gr</div>
+                                                    </th>
+                                                    <th id="th">
+                                                        <div align="center">FPS</div>
+                                                    </th>
+                                                    <th id="th">
+                                                        <div align="center">FT-LB</div>
+                                                    </th>
+                                                </tr>
 
-        <% int rowNum = 0; %>
-        <c:forEach var="row" items="${rs.rows}">
-            <% if (rowNum % 2 == 0) {%>
-        <tr>
-            <td id="td-even">${row.name}</td>
-            <td id="td-even">${row.ProjectileName}</td>
-            <td id="td-even">${row.BulletWeightGR}</td>
-            <td id="td-even">${row.Powder}</td>
-            <td id="td-even">${row.GrainsUsed}</td>
-            <td id="td-even">${row.avgSpeed}</td>
-            <td id="td-even">${row.EnergyFootLBS}</td>
-        </tr>
-        <% } else {%>
+                                                <% int rowNum = 0; %>
+                                                    <c:forEach var="row" items="${rs.rows}">
+                                                        <% if (rowNum % 2 == 0) {%>
+                                                            <tr>
+                                                                <td id="td-even">${row.name}</td>
+                                                                <td id="td-even">${row.ProjectileName}</td>
+                                                                <td id="td-even">${row.BulletWeightGR}</td>
+                                                                <td id="td-even">${row.Powder}</td>
+                                                                <td id="td-even">${row.GrainsUsed}</td>
+                                                                <td id="td-even">${row.avgSpeed}</td>
+                                                                <td id="td-even">${row.EnergyFootLBS}</td>
+                                                            </tr>
+                                                            <% } else {%>
 
-        <tr>
-            <td id="td-odd">${row.name}</td>
-            <td id="td-odd">${row.ProjectileName}</td>
-            <td id="td-odd">${row.BulletWeightGR}</td>
-            <td id="td-odd">${row.Powder}</td>
-            <td id="td-odd">${row.GrainsUsed}</td>
-            <td id="td-odd">${row.avgSpeed}</td>
-            <td id="td-odd">${row.EnergyFootLBS}</td>
-        </tr>
-        <% } /* close IF */
+                                                                <tr>
+                                                                    <td id="td-odd">${row.name}</td>
+                                                                    <td id="td-odd">${row.ProjectileName}</td>
+                                                                    <td id="td-odd">${row.BulletWeightGR}</td>
+                                                                    <td id="td-odd">${row.Powder}</td>
+                                                                    <td id="td-odd">${row.GrainsUsed}</td>
+                                                                    <td id="td-odd">${row.avgSpeed}</td>
+                                                                    <td id="td-odd">${row.EnergyFootLBS}</td>
+                                                                </tr>
+                                                                <% } /* close IF */
             rowNum++;
         %>
-        </c:forEach>
-    </table>     
+                                                    </c:forEach>
+                                            </table>
 
-</div>
+                                        </div>
 
-<jsp:include page="/WEB-INF/jsp/footer.inc.jsp"></jsp:include>
+                                        <jsp:include page="/WEB-INF/jsp/footer.inc.jsp"></jsp:include>
