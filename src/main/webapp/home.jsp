@@ -19,7 +19,7 @@
                             <jsp:include page="/WEB-INF/jsp/header.inc.jsp"></jsp:include>
 
 
-                            <div class="center" id="twocol" class="fadein">
+                            <div class="center fadein" id="twocol">
                                 <p>This site gets built and updated hourly by <a href="https://jenkins.io/" target="_blank">Jenkins</a>.
                                     Check back from time to time, see what's changed. I may put an easter egg in the site
                                     and give rewards to the person that finds it! You'll know if it's a real easter egg...
@@ -45,6 +45,11 @@
                                     functionalities before standardized core competencies. Quickly empower future-proof human
                                     capital for top-line ideas.
                                 </p>
+
+                                <p>
+                                    <img src="extras/bullElk.jpg" alt="bull elk" />
+                                </p>
+
                                 <p>
                                     Professionally procrastinate client-centric ROI with standardized deliverables. Phosfluorescently disintermediate client-based
                                     technologies through team driven channels. Continually coordinate proactive best practices
@@ -64,12 +69,6 @@
                                     Efficiently orchestrate cooperative infomediaries rather than magnetic manufactured products.
                                 </p>
 
-
-
-
-                                <p>
-                                    <img src="extras/bullElk.jpg" alt="bull elk" />
-                                </p>
                                 <p>
                                     Suscipit sit vitae sodales nulla sollicitudin lorem, dolor nulla elit iaculis ligula scelerisque. Duis mi nunc integer quam
                                     pharetra aliquam, dapibus bibendum odio suspendisse arcu libero, laoreet temporibus pretium,
