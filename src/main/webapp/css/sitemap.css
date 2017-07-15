@@ -11,7 +11,6 @@ and open the template in the editor.
 body {
     font-family: "Lucida Grande", "Lucida Sans Unicode", Tahoma, Verdana;
     font-size: 13px;
-    text-shadow: 1px 1px 1px #FF866E;
 }
 
 .lefttilt{
@@ -30,10 +29,6 @@ body {
     -moz-animation: fadein 2s; /* Firefox */
     -webkit-animation: fadein 2s; /* Safari and Chrome */
     -o-animation: fadein 2s; /* Opera */
-}
-
-h1 {
-    text-shadow: 1px 1px 1px #FF866E;
 }
 
 p{

@@ -27,7 +27,7 @@ pageEncoding="UTF-8"%>
 
                                         <jsp:include page="/WEB-INF/jsp/header.inc.jsp"></jsp:include>
 
-                                        <div class="center fadein" id="twocol">
+                                        <div class="center fadein">
                                             <p>Print your load before you shoot it... <a href="extras/genericLabel.pdf">Generic Labels</a></p>
 
 
