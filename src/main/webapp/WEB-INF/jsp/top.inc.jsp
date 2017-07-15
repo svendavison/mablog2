@@ -23,12 +23,14 @@
     <li><a href="${url}contact.jsp" data-load="ajax">Contact</a></li>
     <li><a href="${url}about.jsp" data-load="ajax">About</a></li>
 
-     
-<c:if test="${empty sessionScope['loginUser']}">
-    <li><a href="${url}login.jsp" data-load="ajax">Login</a></li>
-</c:if>
-
-    <li><a href="${url}logout.jsp">Logout-><c:out value="${sessionScope['loginUser']}" /></a></li>
+<c:choose>
+    <c:when test="${empty sessionScope['loginUser']}">
+        <li><a href="${url}login.jsp" data-load="ajax">Login</a></li>
+    </c:when>
+    <c:otherwise>
+        <li><a href="${url}logout.jsp">Logout-><c:out value="${sessionScope['loginUser']}" /></a></li>
+    </c:otherwise>
+</c:choose>
 
   </ul>
 </nav>
