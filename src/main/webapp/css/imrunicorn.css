@@ -23,3 +23,7 @@ th, td {
 #td-odd {
     background-color: #F5F5F5;
 }
+
+p{
+    text-shadow: 1px 1px 1px #FF866E;
+}
