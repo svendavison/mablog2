@@ -12,24 +12,30 @@ body {
     font-family: "Lucida Grande", "Lucida Sans Unicode", Tahoma, Verdana;
     text-shadow: 1px 1px 1px #FF866E;
     font-size: 13px
+    text-shadow: 2px 2px #FF0000;
 }
+
+h1 {
+    text-shadow: 2px 2px #FF0000;
+}
+
 p {
-    text-shadow: 1px 1px 1px #FF866E
+    text-shadow: 2px 2px #FF0000;
 }
 td {
     font-size: 11px;
-    text-align: left
+    text-align: left;
 }
 th {
     text-align: left;
     padding-right: 30px;
-    font-size: 11px
+    font-size: 11px;
 }
 tr.high {
     background-color: #f4f7fa
 }
 a {
-    color: black
+    color: black;
 }
 header a {
     color: #2580B2
@@ -38,13 +44,13 @@ footer {
     padding: 2px;
     margin: 10px;
     font-size: 8pt;
-    color: gray
+    color: gray;
 }
 footer a {
-    color: gray
+    color: gray;
 }
 table {
-    border-spacing: 5px
+    border-spacing: 5px;
 }
 #th {
     background-color: #C1C1C1;
