@@ -16,7 +16,7 @@ pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
 <sql:query var="rs" dataSource="jdbc/codeigniter">
-    select name, ProjectileName, BulletWeightGR, Powder, GrainsUsed, avgSpeed, EnergyFootLBS from AllMyLoads
+    select name, GroupSize, ProjectileName, BulletWeightGR, Powder, GrainsUsed, avgSpeed, EnergyFootLBS from AllMyLoads
 </sql:query>
 
 <%
@@ -35,6 +35,9 @@ pageEncoding="UTF-8"%>
                                                 <tr>
                                                     <th id="th">
                                                         <div align="center">Chamber</div>
+                                                    </th>
+                                                    <th id="th">
+                                                        <div align="center">Grp Size</div>
                                                     </th>
                                                     <th id="th">
                                                         <div align="center">Proj. Name</div>
@@ -61,6 +64,7 @@ pageEncoding="UTF-8"%>
                                                         <% if (rowNum % 2 == 0) {%>
                                                             <tr>
                                                                 <td id="td-even">${row.name}</td>
+                                                                <td id="td-even">${row.GroupSize}</td>
                                                                 <td id="td-even">${row.ProjectileName}</td>
                                                                 <td id="td-even">${row.BulletWeightGR}</td>
                                                                 <td id="td-even">${row.Powder}</td>
@@ -72,6 +76,7 @@ pageEncoding="UTF-8"%>
 
                                                                 <tr>
                                                                     <td id="td-odd">${row.name}</td>
+                                                                    <td id="td-odd">${row.GroupSize}</td>
                                                                     <td id="td-odd">${row.ProjectileName}</td>
                                                                     <td id="td-odd">${row.BulletWeightGR}</td>
                                                                     <td id="td-odd">${row.Powder}</td>
