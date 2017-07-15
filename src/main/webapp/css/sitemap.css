@@ -31,7 +31,7 @@ body {
     -o-animation: fadein 2s; /* Opera */
 }
 
-p{
+.redshadow{
     text-shadow: 1px 1px 1px #FF866E;
 }
 
