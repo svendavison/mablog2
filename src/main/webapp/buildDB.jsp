@@ -23,18 +23,6 @@ LIMIT 1;
     DROP TABLE IF EXISTS AllMyLoads
 </sql:update>
 
-<sql:update var="createSample" dataSource="jdbc/codeigniter">
-    CREATE TABLE IF NOT EXISTS sample (id INT NOT NULL AUTO_INCREMENT, fname VARCHAR(45) NULL, lname VARCHAR(45) NULL, PRIMARY KEY (id))
-</sql:update>
-
-<sql:query var="addSample1" dataSource="jdbc/codeigniter">
-    insert into sample(fname, lname) values("Sven", "Davison")
-</sql:query>
-
-<sql:query var="addSample1" dataSource="jdbc/codeigniter">
-    insert into sample(fname, lname) values("Ben", "SpelledABC")
-</sql:query>
-
 <sql:update var="createAllMyLoads" dataSource="jdbc/codeigniter">
     CREATE TABLE IF NOT EXISTS AllMyLoads (
     `GroupSize` float DEFAULT NULL,
@@ -91,7 +79,7 @@ INSERT INTO `AllMyLoads` (`GroupSize`,`name`,`ProjectileName`,`BulletWeightGR`,`
 
 
 <sql:query var="rs" dataSource="jdbc/codeigniter">
-    select * from sample
+    select count(*) from AllMyLoads
 </sql:query>
 
 
@@ -101,13 +89,12 @@ INSERT INTO `AllMyLoads` (`GroupSize`,`name`,`ProjectileName`,`BulletWeightGR`,`
     </head>
     <body>
 
-        <h1>Tables dropped and data readded!</h1>
-        
+        <h1>Database Populated</h1>
         
         <h2>Results</h2>
 
         <c:forEach var="row" items="${rs.rows}">
-            FName: ${row.fname},LName ${row.lname}<br/>
+            COUNT: ${row.count}<br/>
         </c:forEach>
 
     </body>
