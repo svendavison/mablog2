@@ -25,16 +25,6 @@
                                     and give rewards to the person that finds it! You'll know if it's a real easter egg...
                                 </p>
 
-                                <p>Lorem ipsum dolor sit amet, vitae imperdiet commodo class. Mattis lacus dolor sollicitudin
-                                    lobortis rerum et, sed magna odio. Nec duis gravida pellentesque quis suscipit. Massa
-                                    diam, enim ante quis, vel deleniti mauris fermentum fames imperdiet. Phasellus nunc integer
-                                    nullam lectus dignissim lacus, nulla integer suspendisse, ac pede sem a in nulla montes,
-                                    donec aenean gravida et, pulvinar sed lectus tellus. Integer netus delectus. Lacinia
-                                    commodo, libero ac litora massa condimentum, ridiculus adipiscing vestibulum ab corrupti
-                                    quis diam, morbi egestas ut ac nonummy. Quis molestie a sit. Gravida libero magna bibendum
-                                    laoreet, ultricies nisl mauris, tellus rutrum ante interdum, dis potenti luctus ut adipiscing
-                                    gravida. Integer amet neque nec tellus nec, lacus ac interdum nunc eu, quis nascetur
-                                    vitae, proin scelerisque metus enim a enim eu, ducimus et quam quam.</p>
                                 <p>
                                     Seamlessly utilize turnkey e-business for go forward "outside the box" thinking. Energistically scale global e-markets for
                                     holistic relationships. Rapidiously benchmark fully researched total linkage for ubiquitous
