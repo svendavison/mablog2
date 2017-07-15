@@ -14,6 +14,14 @@ body {
     text-shadow: 1px 1px 1px #FF866E;
 }
 
+.lefttilt{
+    -moz-transform: scale(2) rotate(-15deg) translateX(-50px);
+    -webkit-transform: scale(2) rotate(-15deg) translateX(-50px);
+    -o-transform: scale(2) rotate(-15deg) translateX(-50px);
+    -ms-transform: scale(2) rotate(-15deg) translateX(-50px);
+    transform: scale(2) rotate(-15deg) translateX(-50px);
+}
+
 .fadein{
     margin-top: 25px;
     font-size: 21px;
