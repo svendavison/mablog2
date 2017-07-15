@@ -12,15 +12,15 @@ body {
     font-family: "Lucida Grande", "Lucida Sans Unicode", Tahoma, Verdana;
     text-shadow: 1px 1px 1px #FF866E;
     font-size: 13px
-    text-shadow: 2px 2px #FF0000;
+    text-shadow: 1px 1px 1px #FF866E;
 }
 
 h1 {
-    text-shadow: 2px 2px #FF0000;
+    text-shadow: 1px 1px 1px #FF866E;
 }
 
 p {
-    text-shadow: 2px 2px #FF0000;
+    text-shadow: 1px 1px 1px #FF866E;
 }
 td {
     font-size: 11px;
