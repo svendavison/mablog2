@@ -29,7 +29,7 @@
 </c:if>
 
 <c:if test="${sessionScope['loginUser']}">
-    <li><a href="${url}logout.jsp" data-load="ajax">Logout <c:out value="${sessionScope['loginUser']}" /></a></li>
+    <li><c:out value="${sessionScope['loginUser']}" /></li>
 </c:if>
 
   </ul>
