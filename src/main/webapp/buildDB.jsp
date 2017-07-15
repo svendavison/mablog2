@@ -89,7 +89,7 @@ INSERT INTO `AllMyLoads` (`GroupSize`,`name`,`ProjectileName`,`BulletWeightGR`,`
         <h2>Results</h2>
 
         <c:forEach var="row" items="${rs.rows}">
-            COUNT: ${row.count}<br/>
+            COUNT: ${row.count(*)}<br/>
         </c:forEach>
 
     </body>
