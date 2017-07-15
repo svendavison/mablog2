@@ -52,7 +52,7 @@
             <c:set scope="session"
                    var="loginUser"
                    value="${param.username}"/>
-            <c:redirect url="index.jsp"/>
+            <c:redirect url="home.jsp"/>
           </c:when>
           <c:otherwise>
             <c:redirect url="login.jsp" >
