@@ -11,7 +11,7 @@ echo "Restarting docker via docker-compose..."
 docker-compose restart
 
 echo "---- Waiting a few seconds for tomcat to start ----"
-
+ 
 sleep 10
 echo "Building database from code first..."
 curl -s -o /dev/null -v "http://localhost/IMRUnicorn/buildDB.jsp"
