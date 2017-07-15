@@ -8,8 +8,8 @@
 var sFolder = url.stic + 'js/';
 var aFileList = [
     'ajph',
-    'lib/tipsy',
-    'lib/bootstrap',
+    'tipsy',
+    'bootstrap',
     'common'
 ];
 
