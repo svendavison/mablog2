@@ -28,9 +28,7 @@
     <li><a href="${url}login.jsp" data-load="ajax">Login</a></li>
 </c:if>
 
-<c:if test="${sessionScope['loginUser']}">
     <li><c:out value="${sessionScope['loginUser']}" /></li>
-</c:if>
 
   </ul>
 </nav>
