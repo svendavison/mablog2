@@ -25,6 +25,7 @@ LIMIT 1;
 
 <sql:update var="createAllMyLoads" dataSource="jdbc/codeigniter">
     CREATE TABLE IF NOT EXISTS AllMyLoads (
+    `id` INT NOT NULL AUTO_INCREMENT,
     `GroupSize` float DEFAULT NULL,
     `name` varchar(45) DEFAULT NULL,
     `ProjectileName` varchar(45) DEFAULT NULL,
@@ -41,8 +42,10 @@ LIMIT 1;
     `cycleFailureCount` int(11) DEFAULT NULL,
     `failureToFeedCount` int(11) DEFAULT NULL,
     `coal` float DEFAULT NULL,
-    `avgGroup` float DEFAULT NULL
-    ) ENGINE=InnoDB DEFAULT CHARSET=latin1
+    `avgGroup` float DEFAULT NULL,
+    PRIMARY KEY (`id`)
+    ) 
+    ENGINE=InnoDB DEFAULT CHARSET=latin1
 </sql:update>
 
 
