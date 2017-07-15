@@ -1,7 +1,7 @@
 <%-- 
     Document   : header.inc
     Created on : Jul 4, 2017, 1:55:28 PM
-    Author     : svendavison
+    Author     : benspelledabc
 --%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <%@ page import="java.sql.*" %>
@@ -19,7 +19,7 @@
         <link rel="stylesheet" href="${url}css/common.css" />
         <link rel="stylesheet" href="${url}css/ajph.css" />
         <link rel="stylesheet" href="${url}css/tipsy.css" />
-        <link rel="stylesheet" href="${url}css/imrunicorn.css" />
+        <link rel="stylesheet" href="${url}css/sitemap.css" />
 
     </head>
     <body>

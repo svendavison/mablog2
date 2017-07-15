@@ -1,7 +1,7 @@
 <%-- 
     Document   : top.inc
     Created on : Jul 4, 2017, 1:56:24 PM
-    Author     : svendavison
+    Author     : benspelledabc
 --%>
    <div class="navbar navbar-fixed-top">
   <div class="navbar-inner">
@@ -17,6 +17,7 @@
   <ul class="nav">
     <li class="active"><a href="${url}" data-load="ajax">Home</a></li>
     <li><a href="${url}loads.jsp" data-load="ajax">Loads</a></li>
+    <li><a href="${url}contact.jsp" data-load="ajax">Contact</a></li>
     <li><a href="${url}about.jsp" data-load="ajax">About</a></li>
   </ul>
 </nav>

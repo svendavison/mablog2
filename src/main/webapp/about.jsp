@@ -1,43 +1,28 @@
 <%-- 
     Document   : about
     Created on : Jul 4, 2017, 1:59:14 PM
-    Author     : svendavison
+    Author     : benspelledabc
 --%>
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-         pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 
 <%
     String title = String.format("%s: About", ninja.sven.imrunicorn.Config.SITE_NAME);
     request.setAttribute("pageTitle", title);
     request.setAttribute("pageHeading", title);
 %>
-<jsp:include page="/WEB-INF/jsp/header.inc.jsp"></jsp:include>
+            <jsp:include page="/WEB-INF/jsp/header.inc.jsp"></jsp:include>
 
 
 
-    <div class="center">
+            <div class="center fadein redshadow">
+                <p>
+                    I decided it had been a while since I made a java (JSP) based website. With this in mind, I set forth to convert the site
+                    that was previously done in PHP using the 'CodeIgniter' framework.
 
-        <p>
-            I decided it had been a while since I made a java (JSP) based website. With this in mind, I set forth to convert the site 
-            that was previously done in PHP using the 'CodeIgniter' framework. 
-            
-        </p>
-        
-        <p><img src="extras/iowaMug.jpg" alt="my iowa drab" width="50%"/></p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Pellentesque at tellus in mi consectetur tempor ut quis dui. Donec
-            commodo elit sit amet orci aliquam, vitae iaculis ligula sollicitudin.
-            Nulla blandit diam non diam ornare, vitae iaculis orci molestie. Cras
-            ac risus nisi. Pellentesque aliquet, libero at tincidunt pellentesque,
-            nibh risus eleifend sapien, convallis dapibus metus purus id magna.
-            Quisque a sodales mi, non vehicula mi. Pellentesque habitant morbi
-            tristique senectus et netus et malesuada fames ac turpis egestas.
-            Nulla ultricies enim vitae tellus ullamcorper, sed dapibus orci
-            laoreet. Quisque nec vulputate velit. Suspendisse id nibh mauris.
-            Vestibulum non odio porta, vehicula quam in, fringilla erat. Morbi
-            tincidunt magna odio, non mattis enim maximus in. Morbi ac dapibus mi.</p>
+                </p>
 
-    </div>
+                <p><img src="extras/iowaMug.jpg" alt="my iowa drab" width="50%" /></p>
+            </div>
 
 
-<jsp:include page="/WEB-INF/jsp/footer.inc.jsp"></jsp:include>
+            <jsp:include page="/WEB-INF/jsp/footer.inc.jsp"></jsp:include>

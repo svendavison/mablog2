@@ -14,9 +14,10 @@ import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 
+
 /**
  *
- * @author svendavison
+ * @author benspelledabc
  */
 public class Filter implements javax.servlet.Filter {
 

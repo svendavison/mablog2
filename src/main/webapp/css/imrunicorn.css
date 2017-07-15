@@ -5,7 +5,7 @@ and open the template in the editor.
 */
 /* 
     Created on : Jul 4, 2017, 5:33:02 PM
-    Author     : svendavison
+    Author     : benspelledabc
 */
 
 th, td {
@@ -22,4 +22,8 @@ th, td {
 
 #td-odd {
     background-color: #F5F5F5;
+}
+
+p{
+    text-shadow: 1px 1px 1px #FF866E;
 }
