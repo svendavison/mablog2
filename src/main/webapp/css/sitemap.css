@@ -22,6 +22,15 @@ h1 {
 p {
     text-shadow: 1px 1px 1px #FF866E;
 }
+
+#twocol{
+    -moz-column-count: 2;
+    -moz-column-gap: px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: px;
+    column-count: 2;
+    column-gap: px;
+}
 td {
     font-size: 11px;
     text-align: left;
