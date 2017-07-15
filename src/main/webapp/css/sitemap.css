@@ -13,6 +13,9 @@ body {
     text-shadow: 1px 1px 1px #FF866E;
     font-size: 13px
 }
+p {
+    text-shadow: 1px 1px 1px #FF866E
+}
 td {
     font-size: 11px;
     text-align: left
