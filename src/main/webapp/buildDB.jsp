@@ -74,7 +74,7 @@ INSERT INTO `AllMyLoads` (`GroupSize`,`name`,`ProjectileName`,`BulletWeightGR`,`
 
 
 <sql:query var="rs" dataSource="jdbc/codeigniter">
-    select count(*) from AllMyLoads
+    select count(*) as items from AllMyLoads
 </sql:query>
 
 
@@ -89,7 +89,7 @@ INSERT INTO `AllMyLoads` (`GroupSize`,`name`,`ProjectileName`,`BulletWeightGR`,`
         <h2>Results</h2>
 
         <c:forEach var="row" items="${rs.rows}">
-            COUNT: ${row.count(*)}<br/>
+            COUNT: ${row.items}<br/>
         </c:forEach>
 
     </body>
