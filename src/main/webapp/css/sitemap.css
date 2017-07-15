@@ -10,16 +10,7 @@ and open the template in the editor.
 
 body {
     font-family: "Lucida Grande", "Lucida Sans Unicode", Tahoma, Verdana;
-    text-shadow: 1px 1px 1px #FF866E;
-    font-size: 13px
-    text-shadow: 1px 1px 1px #FF866E;
-}
-
-h1 {
-    text-shadow: 1px 1px 1px #FF866E;
-}
-
-#fadein p{
+    font-size: 13px;
     text-shadow: 1px 1px 1px #FF866E;
     margin-top: 25px;
     font-size: 21px;
@@ -28,6 +19,14 @@ h1 {
     -moz-animation: fadein 2s; /* Firefox */
     -webkit-animation: fadein 2s; /* Safari and Chrome */
     -o-animation: fadein 2s; /* Opera */
+}
+
+h1 {
+    text-shadow: 1px 1px 1px #FF866E;
+}
+
+p{
+    text-shadow: 1px 1px 1px #FF866E;
 }
 
 #twocol{
