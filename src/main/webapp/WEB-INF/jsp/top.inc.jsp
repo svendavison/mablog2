@@ -28,7 +28,7 @@
     <li><a href="${url}login.jsp" data-load="ajax">Login</a></li>
 </c:if>
 
-    <li><c:out value="${sessionScope['loginUser']}" /></li>
+    <li><a href="${url}logout.jsp">Logout-><c:out value="${sessionScope['loginUser']}" /></a></li>
 
   </ul>
 </nav>
