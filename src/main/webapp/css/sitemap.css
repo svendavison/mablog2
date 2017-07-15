@@ -12,6 +12,9 @@ body {
     font-family: "Lucida Grande", "Lucida Sans Unicode", Tahoma, Verdana;
     font-size: 13px;
     text-shadow: 1px 1px 1px #FF866E;
+}
+
+.fadein{
     margin-top: 25px;
     font-size: 21px;
     text-align: center;

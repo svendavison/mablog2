@@ -19,7 +19,7 @@
                             <jsp:include page="/WEB-INF/jsp/header.inc.jsp"></jsp:include>
 
 
-                            <div class="center" id="twocol">
+                            <div class="center" id="twocol" class="fadein">
                                 <p>This site gets built and updated hourly by <a href="https://jenkins.io/" target="_blank">Jenkins</a>.
                                     Check back from time to time, see what's changed. I may put an easter egg in the site
                                     and give rewards to the person that finds it! You'll know if it's a real easter egg...
