@@ -19,6 +19,7 @@
       <nav class="nav-collapse">
   <ul class="nav">
     <li class="active"><a href="${url}" data-load="ajax">Home</a></li>
+    <li class="active"><a href="${url}blog-read.jsp" data-load="ajax">Blog</a></li>
     <li><a href="${url}loads.jsp" data-load="ajax">Loads</a></li>
     <li><a href="${url}contact.jsp" data-load="ajax">Contact</a></li>
     <li><a href="${url}about.jsp" data-load="ajax">About</a></li>

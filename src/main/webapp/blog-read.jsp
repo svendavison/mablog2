@@ -22,6 +22,7 @@
 
                             <div align="center">
                                 <div class="w3-row" style="width:70%;">
+                                    <p>Blog activity is not live. It's the next feature to add!</p>
 
 
                                     <!-- Blog entry -->
