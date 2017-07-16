@@ -17,9 +17,11 @@
 <div class="center fadein redshadow">
 <p>
     You've been logged out!
-    <%
-        session.removeAttribute("loginUser");
-    %>
+    <% session.removeAttribute("loginUser"); %>
+
+    <meta http-equiv="refresh" content="2;URL=${url}">
+
+
 </p>
 </div>
 
