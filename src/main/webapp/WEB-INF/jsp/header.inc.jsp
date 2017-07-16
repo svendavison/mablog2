@@ -20,6 +20,7 @@
         <link rel="stylesheet" href="${url}css/ajph.css" />
         <link rel="stylesheet" href="${url}css/tipsy.css" />
         <link rel="stylesheet" href="${url}css/sitemap.css" />
+        <link rel="stylesheet" href="${url}css/w3.css" />
 
     </head>
     <body>
