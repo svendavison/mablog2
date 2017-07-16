@@ -21,7 +21,7 @@
 
 
     
-        <div class="w3-row" style="width:50%;">
+        <div class="w3-row" style="width:50%;text-align:center">
 
 
         <!-- Blog entry -->
