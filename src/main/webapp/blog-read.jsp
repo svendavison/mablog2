@@ -20,7 +20,9 @@
     <jsp:include page="/WEB-INF/jsp/header.inc.jsp"></jsp:include>
 
 
-    <div class="center">
+    
+        <div class="w3-row">
+
 
         <!-- Blog entry -->
         <div class="w3-card-4 w3-margin w3-white">
