@@ -21,7 +21,7 @@
 
 
     
-        <div class="w3-row" width="80%">
+        <div class="w3-row" id="twocol">
 
 
         <!-- Blog entry -->
