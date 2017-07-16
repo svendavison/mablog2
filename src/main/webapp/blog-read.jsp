@@ -51,7 +51,6 @@
 
         <!-- Blog entry -->
         <div class="w3-card-4 w3-margin w3-white">
-            <img src="${url}extras/bridge.jpg" alt="Norway" style="width:100%">
             <div class="w3-container">
                 <h3><b>BLOG ENTRY 2</b></h3>
                 <h5>Title description, <span class="w3-opacity">April 2, 2014</span></h5>
