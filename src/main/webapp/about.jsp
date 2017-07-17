@@ -12,7 +12,7 @@
 %>
             <jsp:include page="/WEB-INF/jsp/header.inc.jsp"></jsp:include>
 
-
+ 
 
             <div class="center fadein redshadow">
                 <p>
