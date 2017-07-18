@@ -1,0 +1,2 @@
+#!/bin/bash
+docker cp target/IMRU*.war $(docker ps -aqf "name=mablog2_IMRUtomcat"):/usr/local/tomcat/webapps/IMRUnicorn.war
