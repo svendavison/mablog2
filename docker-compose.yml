@@ -1,4 +1,4 @@
-version: '3'
+version: '2'
 
 services:
    IMRUdb:
@@ -13,7 +13,7 @@ services:
        MYSQL_DATABASE: codeigniter
        MYSQL_USER: codeigniter
        MYSQL_PASSWORD: codeigniter
-
+     mem_limit: 125MB
    IMRUtomcat:
      depends_on:
        - IMRUdb
@@ -21,5 +21,6 @@ services:
      ports:
        - "80:8080"
      restart: always
+     mem_limit: 125MB
 volumes:
     db_data:
