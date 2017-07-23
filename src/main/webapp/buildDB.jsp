@@ -37,6 +37,66 @@
 <sql:update var="addUser" dataSource="jdbc/codeigniter">
     INSERT INTO `users` (`id`,`username`,`password`) VALUES(1,'admin','nimda')
 </sql:update>
+    
+<sql:update var="dropBlogEntry" dataSource="jdbc/codeigniter">
+    DROP TABLE IF EXISTS blogEntry
+</sql:update>
+    
+<sql:update var="createBlogEntry" dataSource="jdbc/codeigniter">
+    CREATE TABLE `codeigniter`.`blogEntry` (
+        `id` INT NOT NULL AUTO_INCREMENT,
+        `title` VARCHAR(45) NULL,
+        `description` VARCHAR(245) NULL,
+        `imgpath` VARCHAR(245) NULL DEFAULT "${url}extras/bridge.jpg",
+        `imgpathalttext` VARCHAR(50) NULL,
+        `body` text NULL DEFAULT "No body... oops!",
+        `publishDate` DATETIME NULL DEFAULT NOW(),
+        PRIMARY KEY (`id`))
+</sql:update>    
+        
+<sql:update var="addBlogEntries" dataSource="jdbc/codeigniter">
+    INSERT INTO `codeigniter`.`blogEntry` (`title`, `body`,`description`) VALUES 
+        ('sample record','sample record description... yaaay winning one!', 'This is a sample record.. happy days!'),
+        ('code first databases','<p>
+Conveniently customize state of the art e-business without multimedia based data. Seamlessly negotiate interdependent methods of empowerment after unique convergence. Interactively foster dynamic strategic theme areas vis-a-vis backward-compatible content. 
+</p><p>
+Phosfluorescently foster world-class total linkage for pandemic value. Credibly drive exceptional customer service through cutting-edge partnerships. Intrinsicly foster customized action items with fully researched e-tailers. 
+</p><p>
+Rapidiously seize frictionless customer service for customer directed alignments. Quickly actualize revolutionary paradigms after real-time ideas. Objectively implement market-driven partnerships before clicks-and-mortar models. 
+</p><p>
+Collaboratively procrastinate clicks-and-mortar innovation after exceptional portals. Energistically enhance alternative content for open-source "outside the box" thinking. Completely morph future-proof results through stand-alone human capital. 
+</p><p>
+Monotonectally orchestrate fully tested platforms via 24/7 experiences. Continually provide access to progressive manufactured products before proactive infrastructures. Dynamically procrastinate process-centric "outside the box" thinking vis-a-vis technically sound models. 
+</p><p>
+Phosfluorescently underwhelm flexible architectures through leading-edge processes. Holisticly plagiarize user-centric opportunities for flexible supply chains. Monotonectally incentivize accurate platforms for principle-centered core competencies. 
+</p><p>
+Assertively administrate distributed core competencies before optimal strategic theme areas. Compellingly underwhelm diverse ideas with diverse web-readiness. Holisticly harness turnkey innovation for emerging core competencies. 
+</p><p>
+Holisticly enable covalent opportunities with emerging information. Efficiently build e-business bandwidth for flexible manufactured products. Energistically whiteboard user-centric markets and cross-unit vortals. 
+</p><p>
+Credibly e-enable ubiquitous results and magnetic infrastructures. Completely conceptualize error-free internal or "organic" sources through bricks-and-clicks functionalities. Professionally e-enable out-of-the-box internal or "organic" sources and scalable imperatives. 
+</p><p>
+Dramatically optimize emerging schemas through process-centric niche markets. Credibly envisioneer 2.0 initiatives whereas cutting-edge bandwidth. Professionally strategize economically sound convergence whereas customized collaboration and idea-sharing. 
+</p><p>
+Progressively disseminate one-to-one outsourcing without worldwide models. Monotonectally innovate just in time expertise vis-a-vis best-of-breed leadership skills. Interactively predominate functionalized strategic theme areas through technically sound manufactured products. 
+</p><p>
+Conveniently maintain error-free benefits vis-a-vis cross-platform "outside the box" thinking. Authoritatively simplify cooperative solutions before proactive processes. Objectively disintermediate tactical markets and open-source initiatives. 
+</p><p>
+Objectively maximize clicks-and-mortar applications for enterprise technology. Assertively re-engineer extensive processes rather than 2.0 solutions. Collaboratively fabricate intuitive services for collaborative technologies. 
+</p><p>
+Compellingly underwhelm real-time bandwidth for market-driven ideas. Conveniently formulate tactical solutions before future-proof innovation.
+</p>', 'I am building this dataset with code first implementation.'),
+        ('IMRUnicorn','<p>Efficiently myocardinate orthogonal catalysts for change vis-a-vis holistic strategic theme areas. Rapidiously empower open-source opportunities with premium information. Credibly maximize B2B catalysts for change vis-a-vis low-risk high-yield results. 
+</p>
+<p>Continually extend functional users through bricks-and-clicks mindshare. Globally scale out-of-the-box partnerships with superior applications. Phosfluorescently recaptiualize one-to-one opportunities vis-a-vis enterprise initiatives. 
+</p>
+<p>Enthusiastically seize cross functional functionalities vis-a-vis fully researched products. Dramatically plagiarize multimedia based quality vectors whereas real-time core competencies. Professionally redefine go forward quality vectors for extensible models. 
+</p>
+<p>Completely actualize cost effective ideas before interactive applications. Synergistically synthesize inexpensive infrastructures before ethical relationships. Enthusiastically transition dynamic scenarios and holistic value. 
+</p>
+<p>Continually seize tactical technologies after revolutionary total linkage. Holisticly disseminate e-business value for turnkey infomediaries.
+</p>', 'Anyone ever wonder where this silly site name comes from?')
+</sql:update>
 
 <sql:update var="dropAllMyLoads" dataSource="jdbc/codeigniter">
     DROP TABLE IF EXISTS AllMyLoads

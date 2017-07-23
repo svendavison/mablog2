@@ -17,10 +17,10 @@
 
 <%@ taglib uri="http://java.sun.com/jsp/jstl/sql" prefix="sql" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-
+<%@ taglib uri = "http://java.sun.com/jsp/jstl/functions" prefix = "fn" %>
 
 <sql:query var="rs" dataSource="jdbc/codeigniter">
-    select * from blogEntry where id = <%= request.getParameter("id") %>
+    select * from blogEntry order by id desc limit 15
 </sql:query>
 
 <%
@@ -45,11 +45,26 @@
             </div>
 
             <div class="w3-container">
-                <p>${row.body}</p>
+                
+                <c:set var = "bodyLenMax" value = "500"/>
+                <c:set var = "fullBody" value = "${row.body}"/>
+                <c:set var = "subBody" value = "${fn:substring(fullBody, 0, bodyLenMax)}" />
+                
+                <p>${subBody} </p>
                 <div class="w3-row">
                     <div class="w3-col m8 s12">
-                        &nbsp;
+                    <c:set var = "fullBody" value = "${row.body}"/>
+                    <c:choose>
+                        <c:when test="${fn:length(fullBody) > bodyLenMax}">
+                            <p><button class="w3-button w3-padding-large w3-white w3-border" onclick="window.location.href='${url}blog-read.jsp?id=${row.id}'"><b>READ MORE &raquo;</b></button></p>
+                        </c:when>
+                        <c:otherwise>
+                            <p>&nbsp;</p>
+                        </c:otherwise>    
+                    </c:choose>
+                        
                     </div>
+                    
                     <div class="w3-col m4 w3-hide-small">
                         <p><span class="w3-padding-large w3-right"><b>Comments &nbsp;</b> <span class="w3-badge">&lt;disabled&gt;</span></span>
                         </p>
