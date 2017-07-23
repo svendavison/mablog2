@@ -107,6 +107,10 @@ INSERT INTO `AllMyLoads` (`GroupSize`,`name`,`ProjectileName`,`BulletWeightGR`,`
         <c:forEach var="row" items="${rs.rows}">
             LoadData Count: ${row.items}<br/>
         </c:forEach>
+            
+            <p>I realize the tables are not normalized. That's fine for now. The goal was to build the database with
+            code first design and I didn't want to loose my data. The next step is to properly normalize the database. 
+            Once it's normalized I'll export it and do the code first implementation of the normalized database.</p>
 
     </body>
 </html>

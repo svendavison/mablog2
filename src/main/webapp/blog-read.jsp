@@ -12,7 +12,7 @@
 
 
                         <%
-    String title = String.format("%s: Blog", ninja.sven.imrunicorn.Config.SITE_NAME);
+    String title = String.format("%s: Blog Posts", ninja.sven.imrunicorn.Config.SITE_NAME);
     request.setAttribute("pageTitle", title);
     request.setAttribute("pageHeading", title);
 %>
