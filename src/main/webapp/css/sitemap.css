@@ -37,11 +37,11 @@ body {
 
 #twocol{
     -moz-column-count: 2;
-    -moz-column-gap: px;
+    -moz-column-gap: 2px;
     -webkit-column-count: 2;
     -webkit-column-gap: px;
     column-count: 2;
-    column-gap: px;
+    column-gap: 2px;
 }
 td {
     font-size: 11px;
