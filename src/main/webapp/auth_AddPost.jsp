@@ -33,9 +33,10 @@
 
 
             <form action = "auth_doAddPost.jsp" method = "POST" target = "_blank">
-                <input type = "text" name = "p_title" size="40" /> Maths
-                <input type="text" name = "p_body" size="400"/> Physics
-                <input type = "text" name = "p_desc" size="40" /> Chemistry
+                <input type = "text" name = "p_title" size="40" /> Title<br />
+                <input type = "text" name = "p_desc" size="40" /> Description <br />
+                Body:
+                <textarea name="p_body" rows="10" cols="30" /><br />
                 <input type = "submit" value = "Add Post" />
             </form>
 
