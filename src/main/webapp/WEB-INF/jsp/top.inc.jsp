@@ -23,7 +23,7 @@
     <li class="active"><a href="${url}loads.jsp" data-load="ajax">Loads</a></li>
     <li class="active"><a href="${url}contact.jsp" data-load="ajax">Contact</a></li>
     <li class="active"><a href="${url}about.jsp" data-load="ajax">About</a></li>
-    <li> | </li>
+    <li> * </li>
 <c:choose>
     <c:when test="${empty sessionScope['loginUser']}">
         <li class="active"><a href="${url}login.jsp" data-load="ajax">Login</a></li>
