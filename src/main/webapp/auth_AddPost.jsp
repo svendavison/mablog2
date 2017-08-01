@@ -36,7 +36,7 @@
                 <input type = "text" name = "p_title" size="40" /> Title<br />
                 <input type = "text" name = "p_desc" size="40" /> Description <br />
                 Body:
-                <textarea name="p_body" rows="10" cols="30" /><br />
+                <textarea name="p_body" rows="10" cols="30">Enter a post... jackle.</textarea><br />
                 <input type = "submit" value = "Add Post" />
             </form>
 
