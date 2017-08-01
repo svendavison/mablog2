@@ -29,7 +29,6 @@
                             <li class="active"><a href="${url}login.jsp" data-load="ajax">Login</a></li>
                             </c:when>
                             <c:otherwise>
-                            <li class="active"><a href="${url}buildDB.jsp" data-load="ajax">Reset Database</a></li> 
                             <li class="active"><a href="${url}auth_AddPost.jsp" data-load="ajax">Add Post</a></li>        
                             <li class="active"><a href="${url}logout.jsp">Logout-><c:out value="${sessionScope['loginUser']}" /></a></li>
                             </c:otherwise>
