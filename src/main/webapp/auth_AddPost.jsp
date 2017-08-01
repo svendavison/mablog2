@@ -36,7 +36,7 @@
                 TITLE:<input type = "text" name = "p_title" size="40" /><br />
                 DESC :<input type = "text" name = "p_desc" size="40" /><br />
                 BODY:<br />
-                <textarea name="p_body" rows="30" cols="70">Don't forget the open/close paragraph tags!
+                <textarea name="p_body" rows="10" cols="30">Don't forget the open/close paragraph tags!
                 </textarea><br />
                 <input type = "submit" value = "Add Post" />
             </form>
