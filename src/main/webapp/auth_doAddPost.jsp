@@ -30,22 +30,20 @@
             </c:when>
             <c:otherwise>
                 Adding your post.. hold tight bitch!
-                
-                <c:set var = "p_title" scope = "page" value = "${param.p_title}"/>
-                <c:set var = "p_body" scope = "page" value = "${param.p_body}"/>
-                <c:set var = "p_desc" scope = "page" value = "${param.p_desc}"/>
-                
+
                 <sql:update var="addUser" dataSource="jdbc/codeigniter">
-                    INSERT INTO `codeigniter`.`blogEntry` (`title`, `body`,`description`) VALUES 
-                        ('${p_title}','${p_body}', '${p_desc}')
+                    INSERT INTO blogEntry (title, body, description) VALUES (?, ?, ?)
+                    <sql:param value="${param.p_title}" />
+                    <sql:param value="${param.p_body}" />
+                    <sql:param value="${param.p_desc}" />
                 </sql:update>
 
-                        I TINK IT'S WORKING!
+                I THINK IT'S WORKING!
 
-        </c:otherwise>
-    </c:choose>
+            </c:otherwise>
+        </c:choose>
 
-</p>
+    </p>
 </div>
 
 
