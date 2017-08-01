@@ -32,11 +32,11 @@
                 Hello <c:out value="${sessionScope['loginUser']}" />! We're going to do a sql insert...
 
 
-            <form action = "auth_doAddPost.jsp" method = "POST" target = "_blank">
-                <input type = "text" name = "p_title" size="40" /> Title<br />
-                <input type = "text" name = "p_desc" size="40" /> Description <br />
-                Body:
-                <textarea name="p_body" rows="10" cols="30">Don't forget the open/close paragraph tags!
+            <form action = "auth_doAddPost.jsp" method = "POST">
+                TITLE:<input type = "text" name = "p_title" size="40" /><br />
+                DESC :<input type = "text" name = "p_desc" size="40" /><br />
+                BODY:<br />
+                <textarea name="p_body" rows="30" cols="70">Don't forget the open/close paragraph tags!
                 </textarea><br />
                 <input type = "submit" value = "Add Post" />
             </form>
