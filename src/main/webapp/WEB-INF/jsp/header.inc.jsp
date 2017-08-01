@@ -5,6 +5,14 @@
 --%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <%@ page import="java.sql.*" %>
+<%@ page import ="java.sql.*" %>
+<%@ page import ="java.sql.Connection" %>
+<%@ page import ="java.sql.DriverManager" %>
+<%@ page import ="java.sql.PreparedStatement" %>
+<%@ page import ="java.sql.ResultSet" %>
+<%@ page import ="java.sql.SQLException" %>
+<%@ page import ="java.sql.Statement" %>
+
 <%@ page import="java.text.SimpleDateFormat" %>
 <%@ page import="java.util.Calendar" %>
 <%@ page import="java.util.Date" %>
