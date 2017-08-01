@@ -31,11 +31,9 @@
             <c:otherwise>
                 Hello <c:out value="${sessionScope['loginUser']}" />! We're going to do a sql insert...
 
-                <%
-                    String p_title = "Some Title";
-                    String p_body = "some short body...";
-                    String p_desc = "Super cool description time!";
-                %>
+                <c:set var = "p_title" scope = "page" value = "Some Title"/>
+                <c:set var = "p_body" scope = "page" value = "This might work..."/>
+                <c:set var = "p_desc" scope = "page" value = "Google fo.."/>
                 
                 <sql:update var="addUser" dataSource="jdbc/codeigniter">
                     INSERT INTO `codeigniter`.`blogEntry` (`title`, `body`,`description`) VALUES 
