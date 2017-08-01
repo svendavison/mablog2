@@ -42,7 +42,7 @@
                         ('${p_title}','${p_body}', '${p_desc}')
                 </sql:update>
                         
-                        YAAAY! We did a SQL insert!
+                        YAAAY! We did a SQL insert for ptitle= ${p_title}!
 
             </c:otherwise>
         </c:choose>
