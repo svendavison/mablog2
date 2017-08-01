@@ -29,16 +29,18 @@
                 You need to login to make posts. Sorry m8.
             </c:when>
             <c:otherwise>
-                Hello <c:out value="${sessionScope['loginUser']}" />! We're going to do a sql insert...
+                Adding your post.. hold tight bitch!
+                
+                <c:set var = "p_title" scope = "page" value = "${param.p_title}"/>
+                <c:set var = "p_body" scope = "page" value = "${param.p_body}"/>
+                <c:set var = "p_desc" scope = "page" value = "${param.p_desc}"/>
+                
+                <sql:update var="addUser" dataSource="jdbc/codeigniter">
+                    INSERT INTO `codeigniter`.`blogEntry` (`title`, `body`,`description`) VALUES 
+                        ('${p_title}','${p_body}', '${p_desc}')
+                </sql:update>
 
-
-            <form action = "auth_doAddPost.jsp" method = "POST" target = "_blank">
-                <input type = "text" name = "p_title" size="40" /> Maths
-                <input type="text" name = "p_body" size="400"/> Physics
-                <input type = "text" name = "p_desc" size="40" /> Chemistry
-                <input type = "submit" value = "Add Post" />
-            </form>
-
+                        I TINK IT'S WORKING!
 
         </c:otherwise>
     </c:choose>
