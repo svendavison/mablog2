@@ -38,8 +38,6 @@
                     <sql:param value="${param.p_desc}" />
                 </sql:update>
 
-                I THINK IT'S WORKING!
-
             </c:otherwise>
         </c:choose>
 

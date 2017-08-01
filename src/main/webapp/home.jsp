@@ -31,23 +31,38 @@
         </c:when>
         <c:otherwise>
             <p>Hello <c:out value="${sessionScope['loginUser']}" />!</p>
-
             <p>
-                Professionally optimize economically sound imperatives for technically sound deliverables. Objectively actualize flexible
-                functionalities before standardized core competencies. Quickly empower future-proof human
-                capital for top-line ideas.
+                Energistically seize backend infrastructures rather than premier supply chains. Interactively administrate resource sucking scenarios via customized opportunities. Dynamically fashion team driven alignments before distributed manufactured products. 
+            </p><p>
+                Conveniently communicate go forward applications and bleeding-edge vortals. Continually envisioneer parallel resources through integrated niches. Intrinsicly pontificate team building potentialities rather than 24/365 platforms. 
+            </p><p>
+                Assertively integrate bricks-and-clicks portals before distributed technology. Dramatically visualize frictionless catalysts for change without ethical collaboration and idea-sharing. Enthusiastically plagiarize leveraged process improvements rather than process-centric channels. 
+            </p><p>
+                Interactively leverage existing functionalized supply chains through stand-alone benefits. Objectively negotiate orthogonal opportunities without backward-compatible platforms. Interactively facilitate effective synergy and bricks-and-clicks outsourcing. 
+            </p><p>
+                Intrinsicly provide access to inexpensive quality vectors through professional platforms. Compellingly benchmark virtual benefits whereas pandemic platforms. Uniquely e-enable stand-alone content via collaborative metrics. 
+            </p><p>
+                Distinctively matrix quality potentialities whereas excellent vortals. Quickly promote sustainable infrastructures for fully researched web-readiness. Distinctively matrix unique methodologies before covalent technology. 
+            </p><p>
+                Continually formulate bricks-and-clicks scenarios via plug-and-play platforms. Conveniently negotiate extensive technology via high standards in action items. Distinctively envisioneer backend users vis-a-vis exceptional total linkage. 
             </p>
         </c:otherwise>
     </c:choose>
 
     <p>
-        <img src="extras/bullElk.jpg" alt="bull elk" />
-    </p>
-
-    <p>
         Collaboratively productize emerging process improvements before real-time processes. 
         Efficiently formulate efficient collaboration and idea-sharing with scalable innovation. 
         Continually productivate stand-alone applications through integrated platforms.
+    </p>
+
+    <p>
+        Quickly scale efficient synergy after scalable sources. Proactively cultivate multimedia based bandwidth with error-free solutions. Interactively leverage other's resource sucking solutions through viral expertise. 
+    </p><p>
+        Globally pontificate open-source synergy and superior platforms. Conveniently conceptualize emerging imperatives for cross-unit content. Assertively disseminate worldwide testing procedures without flexible manufactured products. 
+    </p><p>
+        Compellingly productivate market-driven initiatives whereas flexible vortals. Monotonectally revolutionize long-term high-impact experiences and maintainable synergy. Compellingly iterate fully researched bandwidth for top-line information. 
+    </p><p>
+        Compellingly underwhelm reliable bandwidth through proactive users. Proactively deploy cross functional quality vectors with fully tested infomediaries. Efficiently evisculate timely "outside the box" thinking after wireless best practices. 
     </p>
 
 </div>
