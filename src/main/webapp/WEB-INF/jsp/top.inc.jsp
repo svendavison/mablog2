@@ -29,10 +29,7 @@
         <li class="active"><a href="${url}login.jsp" data-load="ajax">Login</a></li>
     </c:when>
     <c:otherwise>
-        <li class="active"><a href="${url}about2.jsp" data-load="ajax">About 2</a></li>
-        <li class="active"><a href="${url}about3.jsp" data-load="ajax">About 3</a></li>
-        <li class="active"><a href="${url}about4.jsp" data-load="ajax">About 4</a></li>
-        <li class="active"><a href="${url}about5.jsp" data-load="ajax">About 5</a></li>
+        <li class="active"><a href="${url}auth_AddPost.jsp" data-load="ajax">Add Post</a></li>        
         <li class="active"><a href="${url}logout.jsp">Logout-><c:out value="${sessionScope['loginUser']}" /></a></li>
     </c:otherwise>
 </c:choose>
