@@ -1,3 +1,4 @@
 #!/bin/bash
 echo "I know you can do it."
 docker cp target/IMRU*.war $(docker ps -aqf "name=mablog2_IMRUtomcat"):/usr/local/tomcat/webapps/IMRUnicorn.war
+docker cp target/IMRU*.war $(docker ps -aqf "name=mablog2_IMRUtomcat_alpine"):/usr/local/tomcat/webapps/IMRUnicorn.war
