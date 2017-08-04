@@ -33,12 +33,12 @@
 
 
             <form action = "auth_doAddPost.jsp" method = "POST">
-                TITLE:<input type = "text" name = "p_title" size="40" /><br />
-                DESC :<input type = "text" name = "p_desc" size="40" /><br />
-                BODY:<br />
-                <textarea name="p_body" rows="10" cols="30">Don't forget the open/close paragraph tags!
-                </textarea><br />
-                <input type = "submit" value = "Add Post" />
+                Main Title:<input class="myreset" type = "text" name = "p_title" size="40" /><br />
+                Short Desc :<input class="myreset" type = "text" name = "p_desc" size="40" /><br />
+                Body:<br />
+                <textarea class="myreset" name="p_body" rows="10" cols="120">&lt;p&gt;Don't forget the open/close paragraph tags!&lt;/p&gt;
+                </textarea><br /><br />
+                <input class="myreset" type = "submit" value = "Add Post" />
             </form>
 
 
