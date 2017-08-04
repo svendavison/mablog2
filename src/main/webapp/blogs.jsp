@@ -32,8 +32,8 @@
 <jsp:include page="/WEB-INF/jsp/header.inc.jsp"></jsp:include>
 
 
-    <div align="center">
-        <div class="w3-row" style="width:70%;">
+    <div align="center" class="myfade">
+        <div class="w3-row myfade" style="width:70%;">
 
         <c:forEach var="row" items="${rs.rows}">
     <!-- Blog entry -->
