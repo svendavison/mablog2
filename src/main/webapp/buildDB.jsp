@@ -20,11 +20,6 @@
 
 <jsp:include page="/WEB-INF/jsp/header.inc.jsp"></jsp:include>
 
-<c:choose>
-    <c:when test="${empty sessionScope['loginUser']}">
-        You need to login to make posts. Sorry m8. This should change later, so it'll prompt to make the "admin" account if not found...
-    </c:when>
-    <c:otherwise>
 
         <sql:update var="dropUsers" dataSource="jdbc/codeigniter">
             DROP TABLE IF EXISTS users
@@ -177,10 +172,5 @@
                 Once it's normalized I'll export it and do the code first implementation of the normalized database.
             </p>
         </div>
-
-
-    </c:otherwise>
-</c:choose>
-
 
 <jsp:include page="/WEB-INF/jsp/footer.inc.jsp"></jsp:include>
