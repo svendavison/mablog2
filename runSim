@@ -10,10 +10,8 @@ fi
 
 COUNTER=0
 while [ $COUNTER -lt $MAX ]; do
-   echo "hello world"
+   echo "Starting Simulator: $COUNTER"
    /usr/local/bin/python2 gen2.py &
-
-
 
    let COUNTER=COUNTER+1
 done
