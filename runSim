@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# Kick off a number of workers to simulate traffic...
+
+MAX=3
+
+if [[ $1 ]]; then
+   MAX=$1
+fi
+
+COUNTER=0
+while [ $COUNTER -lt $MAX ]; do
+   echo "Starting Simulator: $COUNTER"
+   /usr/local/bin/python2 gen2.py &
+
+   let COUNTER=COUNTER+1
+done

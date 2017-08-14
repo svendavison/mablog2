@@ -14,12 +14,10 @@ services:
        MYSQL_USER: codeigniter
        MYSQL_PASSWORD: codeigniter
      mem_limit: 512MB
-   IMRUtomcat:
+   IMRUtomcat_alpine:
      depends_on:
        - IMRUdb
-     image: benspelledabc/imru-tomcat:latest
-     volumes:
-       - certs:/usr/local/tomcat/certs
+     image: benspelledabc/imru-tomcat-alpine
      ports:
        - "80:8080"
        - "443:443"
@@ -27,4 +25,3 @@ services:
      mem_limit: 512MB
 volumes:
     db_data:
-    certs:
