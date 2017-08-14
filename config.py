@@ -8,12 +8,12 @@ debug = True # set to True to enable useful console output
 #rootURLs = ["https://digg.com/"] 
 
 rootURLs = [
-        "http://localhost/",
-        "http://localhost/IMRUnicorn/",
-        "http://localhost/IMRUnicorn/blogs.jsp",
-        "http://localhost/IMRUnicorn/loads.jsp",
-        "http://localhost/IMRUnicorn/about.jsp",
-        "http://localhost/IMRUnicorn/login.jsp"
+        "https://localhost/",
+        "https://localhost/IMRUnicorn/",
+        "https://localhost/IMRUnicorn/blogs.jsp",
+        "https://localhost/IMRUnicorn/loads.jsp",
+        "https://localhost/IMRUnicorn/about.jsp",
+        "https://localhost/IMRUnicorn/login.jsp"
 	]
 
 
