@@ -2,7 +2,7 @@ version: '2'
 
 services:
    IMRUdb:
-     image: mariadb:latest
+     image: mariadb:10.3.0
      volumes:
        - db_data:/var/lib/mysql
      restart: always

@@ -17,7 +17,7 @@ import javax.servlet.ServletResponse;
 
 /**
  *
- * @author benspelledabc
+ * @author svendavison
  */
 public class Filter implements javax.servlet.Filter {
 

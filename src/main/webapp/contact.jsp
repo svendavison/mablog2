@@ -1,7 +1,7 @@
 <%-- 
     Document   : contact
     Created on : Jul 4, 2017, 1:42:06 PM
-    Author     : benspelledabc
+    Author     : svendavison
 --%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ page import="java.text.SimpleDateFormat" %>

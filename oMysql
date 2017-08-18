@@ -1,0 +1,2 @@
+$!/bin/bash
+docker run -it --net mablog2_default --link mablog2_IMRUdb_1:mariadb --rm mariadb sh -c 'exec mysql -h"localhost" -P"3306" -uroot -p"somedbpass"'
