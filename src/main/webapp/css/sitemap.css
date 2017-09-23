@@ -73,3 +73,7 @@ table {
 #td-odd {
     background-color: #F5F5F5;
 }
+
+#pblog-left{
+    align: left;
+}

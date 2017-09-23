@@ -45,7 +45,7 @@
             </div>
 
             <div class="w3-container">
-                <p align="left">${row.body}</p>
+                <p id="pblog-left">${row.body}</p>
                 <div class="w3-row">
                     <div class="w3-col m8 s12">
                         &nbsp;
