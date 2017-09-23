@@ -26,10 +26,11 @@
     <p>
         <c:choose>
             <c:when test="${empty sessionScope['loginUser']}">
-                You need to login to make posts. Sorry m8.
+            <p id="p-center">You need to login to make posts. Sorry m8.</p>
             </c:when>
             <c:otherwise>
-                Adding your post.. hold tight bitch!
+            <p id="p-center">
+                Adding your post.. hold tight bitch!</p>
 
                 <sql:update var="addUser" dataSource="jdbc/codeigniter">
                     INSERT INTO blogEntry (title, body, description) VALUES (?, ?, ?)
