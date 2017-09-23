@@ -11,7 +11,7 @@ import java.text.SimpleDateFormat;
 
 /**
  *
- * @author benspelledabc
+ * @author svendavison
  */
 public class Config {
     	

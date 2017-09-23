@@ -1,7 +1,7 @@
 <%-- 
     Document   : about
     Created on : Jul 4, 2017, 1:59:14 PM
-    Author     : benspelledabc
+    Author     : svendavison
 --%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 
