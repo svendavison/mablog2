@@ -15,7 +15,7 @@
  
 
             <div class="center fadein redshadow">
-                <p>
+                <p id="p-center">
                     I decided it had been a while since I made a java (JSP) based website. With this in mind, I set forth to convert the site
                     that was previously done in PHP using the 'CodeIgniter' framework.
 

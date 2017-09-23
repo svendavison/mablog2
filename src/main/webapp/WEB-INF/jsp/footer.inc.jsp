@@ -12,7 +12,7 @@
   <p>&nbsp;</p>
   <p>&nbsp;</p>
   
-  <p align="center">&copy; ${year} - By Sven Davison | All Rights Reserved &nbsp; &bull; &nbsp; <jsp:include page="/WEB-INF/jsp/bottom.inc.jsp"></jsp:include></p>
+  <p id="p-center">&copy; ${year} - By Sven Davison | All Rights Reserved &nbsp; &bull; &nbsp; <jsp:include page="/WEB-INF/jsp/bottom.inc.jsp"></jsp:include></p>
   
 </footer>
 
