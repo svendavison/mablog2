@@ -50,7 +50,7 @@
                 <c:set var = "fullBody" value = "${row.body}"/>
                 <c:set var = "subBody" value = "${fn:substring(fullBody, 0, bodyLenMax)}" />
                 
-                <p>${subBody} </p>
+                <p align="left">${subBody} </p>
                 <div class="w3-row">
                     <div class="w3-col m8 s12">
                     <c:set var = "fullBody" value = "${row.body}"/>
