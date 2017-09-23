@@ -31,9 +31,9 @@ body {
     -o-animation: fadein 2s; /* Opera */
 }
 
-.redshadow{
+/* .redshadow{
     text-shadow: 1px 1px 1px #FF866E;
-}
+} */
 
 #twocol{
     -moz-column-count: 2;
