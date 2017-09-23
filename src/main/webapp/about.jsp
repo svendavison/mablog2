@@ -20,7 +20,9 @@
                     that was previously done in PHP using the 'CodeIgniter' framework.
                 </p>
                 
-                <p id="p-center"><a href="/IMRUnicorn/extras/resume.docx"><img src="/IMRUnicorn/extras/resume-ss.png" /></a></p>
+                <p id="p-center"><a href="/IMRUnicorn/extras/resume.docx"><img src="/IMRUnicorn/extras/resume-1_2.png" /></a></p>
+                <p id="p-center"><a href="/IMRUnicorn/extras/resume.docx"><img src="/IMRUnicorn/extras/resume-2_2.png" /></a></p>
+                <p>&nbsp;</p>
                 <p id="p-center">Click the resume screen shot above or <a href="/IMRUnicorn/extras/resume.docx">this link</a> to download my resume.</p>
                 
             </div>
