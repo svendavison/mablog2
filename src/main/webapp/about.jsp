@@ -15,13 +15,16 @@
  
 
             <div class="center fadein redshadow">
-                <p>
+                <p id="p-center">
                     I decided it had been a while since I made a java (JSP) based website. With this in mind, I set forth to convert the site
                     that was previously done in PHP using the 'CodeIgniter' framework.
-
                 </p>
-
-                <p><img src="extras/iowaMug.jpg" alt="my iowa drab" width="50%" /></p>
+                
+                <p id="p-center"><a href="/IMRUnicorn/extras/resume.docx"><img src="/IMRUnicorn/extras/resume-1_2.png" /></a></p>
+                <p id="p-center"><a href="/IMRUnicorn/extras/resume.docx"><img src="/IMRUnicorn/extras/resume-2_2.png" /></a></p>
+                <p>&nbsp;</p>
+                <p id="p-center">Click the resume screen shot above or <a href="/IMRUnicorn/extras/resume.docx">this link</a> to download my resume.</p>
+                
             </div>
 
 
