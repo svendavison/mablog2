@@ -21,6 +21,7 @@ body {
     transform: scale(2) rotate(-15deg) translateX(-50px);
 }
 
+/*
 .fadein{
     margin-top: 25px;
     font-size: 21px;
@@ -30,6 +31,7 @@ body {
     -webkit-animation: fadein 2s; /* Safari and Chrome */
     -o-animation: fadein 2s; /* Opera */
 }
+*/
 
 /* .redshadow{
     text-shadow: 1px 1px 1px #FF866E;
