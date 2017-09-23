@@ -1,0 +1,5 @@
+$!/bin/bash
+
+#docker run -it --net mablog2_default --link mablog2_IMRUdb_1:mariadb --rm mariadb sh -c 'exec mysql -h"$MYSQL_PORT_3306_TCP_ADDR" -P"$MYSQL_PORT_3306_TCP_PORT" -uroot -p"$MYSQL_ENV_MYSQL_ROOT_PASSWORD"'
+
+docker run -it --net mablog2_default --link mablog2_IMRUdb_1:mariadb --rm mariadb sh -c 'exec mysql -h"127.0.0.1" -P"3306" -uroot -p"somedbpass"'

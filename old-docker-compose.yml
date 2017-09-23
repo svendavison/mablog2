@@ -17,7 +17,7 @@ services:
    IMRUtomcat:
      depends_on:
        - IMRUdb
-     image: benspelledabc/imru-tomcat:latest
+     image: svendavison/imru-tomcat:latest
      volumes:
        - certs:/usr/local/tomcat/certs
      ports:

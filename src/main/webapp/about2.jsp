@@ -4,6 +4,7 @@
     Author     : svendavison
 --%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page import="ninja.sven.imrunicorn.*, java.util.ArrayList" %>
 
 <%
     String title = String.format("%s: About", ninja.sven.imrunicorn.Config.SITE_NAME);
@@ -15,13 +16,9 @@
  
 
             <div class="center fadein redshadow">
-                <p>
-                    I decided it had been a while since I made a java (JSP) based website. With this in mind, I set forth to convert the site
-                    that was previously done in PHP using the 'CodeIgniter' framework.
-
-                </p>
-
-                <p><img src="extras/iowaMug.jpg" alt="my iowa drab" width="50%" /></p>
+            <p>
+                <%= FunUtils.makeItLower("FUN TIMES") %>
+            </p>
             </div>
 
 
