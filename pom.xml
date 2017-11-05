@@ -4,7 +4,7 @@
 
     <groupId>ninja.sven</groupId>
     <artifactId>IMRUnicorn</artifactId>
-    <version>1.1-SNAPSHOT</version>
+    <version>1.7-SNAPSHOT</version>
     <packaging>war</packaging>
 
     <name>IMRUnicorn</name>

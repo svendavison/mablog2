@@ -1,0 +1,27 @@
+version: '2'
+
+services:
+   IMRUdb:
+     image: mariadb:10.3.0
+     volumes:
+       - db_data:/var/lib/mysql
+     restart: always
+     ports:
+       - "3306:3306"
+     environment:
+       MYSQL_ROOT_PASSWORD: somedbpass
+       MYSQL_DATABASE: codeigniter
+       MYSQL_USER: codeigniter
+       MYSQL_PASSWORD: codeigniter
+     mem_limit: 512MB
+   IMRUtomcat_alpine:
+     depends_on:
+       - IMRUdb
+     image: benspelledabc/imru-tomcat-alpine:1.6.9
+     ports:
+       - "80:8080"
+       - "443:443"
+     restart: always
+     mem_limit: 512MB
+volumes:
+    db_data:
