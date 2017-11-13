@@ -17,7 +17,7 @@ services:
    IMRUtomcat_alpine:
      depends_on:
        - IMRUdb
-     image: benspelledabc/imru-tomcat-alpine:1.6.9
+     image: benspelledabc/imru-tomcat-alpine
      ports:
        - "80:8080"
        - "443:443"
