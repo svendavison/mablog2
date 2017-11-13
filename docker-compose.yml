@@ -23,5 +23,16 @@ services:
        - "443:443"
      restart: always
      mem_limit: 1024MB
+
+   phpmyadmin:
+     image: phpmyadmin/phpmyadmin
+     container_name: phpmyadmin
+     environment:
+       - MYSQL_ROOT_PASSWORD:"somedbpass"
+       - PMA_HOST=IMRUdb
+     restart: always
+     ports:
+       - "8080:80"
+
 volumes:
     db_data:
