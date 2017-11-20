@@ -13,26 +13,15 @@ services:
        MYSQL_DATABASE: codeigniter
        MYSQL_USER: codeigniter
        MYSQL_PASSWORD: codeigniter
-     mem_limit: 1024MB
+     mem_limit: 512MB
    IMRUtomcat_alpine:
      depends_on:
        - IMRUdb
-     image: benspelledabc/imru-tomcat-alpine
+     image: benspelledabc/imru-tomcat-alpine:1.6.9
      ports:
        - "80:8080"
        - "443:443"
      restart: always
-     mem_limit: 1024MB
-
-   phpmyadmin:
-     image: phpmyadmin/phpmyadmin
-     container_name: phpmyadmin
-     environment:
-       - MYSQL_ROOT_PASSWORD:"somedbpass"
-       - PMA_HOST=IMRUdb
-     restart: always
-     ports:
-       - "8080:80"
-
+     mem_limit: 512MB
 volumes:
     db_data:

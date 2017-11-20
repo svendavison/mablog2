@@ -14,7 +14,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
 <sql:query var="rs" dataSource="jdbc/codeigniter">
-    select name, GroupSize, ProjectileName, BulletWeightGR, Powder, GrainsUsed, avgSpeed, EnergyFootLBS from AllMyLoads
+    select name, barrelLenInches, GroupSize, ProjectileName, BulletWeightGR, Powder, GrainsUsed, avgSpeed, EnergyFootLBS from AllMyLoads
 </sql:query>
 
 <%
@@ -33,6 +33,9 @@
             <tr>
                 <th id="th">
                     <div align="center">Chamber</div>
+                </th>
+                <th id="th">
+                    <div align="center">Barrel Length (Inches)</div>
                 </th>
                 <th id="th">
                     <div align="center">Grp Size</div>
@@ -62,6 +65,7 @@
                     <% if (rowNum % 2 == 0) {%>
                         <tr>
                             <td id="td-even">${row.name}</td>
+                            <td id="td-even">${row.barrelLenInches}</td>
                             <td id="td-even">${row.GroupSize}</td>
                             <td id="td-even">${row.ProjectileName}</td>
                             <td id="td-even">${row.BulletWeightGR}</td>
@@ -74,6 +78,7 @@
 
                             <tr>
                                 <td id="td-odd">${row.name}</td>
+                                <td id="td-even">${row.barrelLenInches}</td>
                                 <td id="td-odd">${row.GroupSize}</td>
                                 <td id="td-odd">${row.ProjectileName}</td>
                                 <td id="td-odd">${row.BulletWeightGR}</td>
