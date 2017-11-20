@@ -18,7 +18,7 @@
 </sql:query>
 
 <%
-    String title = String.format("%s: Loads", ninja.sven.imrunicorn.Config.SITE_NAME);
+    String title = String.format("%s: Ray's Address Book", ninja.sven.imrunicorn.Config.SITE_NAME);
     request.setAttribute("pageTitle", title);
     request.setAttribute("pageHeading", title);
 %>
