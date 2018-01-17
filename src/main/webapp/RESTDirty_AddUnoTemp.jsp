@@ -30,6 +30,7 @@
 
     <c:forEach var="row" items="${rs.rows}">
         <p><strong>[${row.timeStamp}]</strong> - ${row.temperature}&#8457; and (${row.humidity}% humidity).</p>
+
     </c:forEach>
    
     
