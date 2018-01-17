@@ -29,7 +29,8 @@
     </sql:query>
 
     <c:forEach var="row" items="${rs.rows}">
-        <p>[${row.timeStamp}] ${row.temperature}&#8457; (${row.humidity}% humidity).</p>
+        <p><strong>[${row.timeStamp}]</strong> - ${row.temperature}&#8457; and (${row.humidity}% humidity).</p>
+
     </c:forEach>
    
     
