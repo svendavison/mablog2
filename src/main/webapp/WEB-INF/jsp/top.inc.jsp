@@ -21,6 +21,7 @@
                     <li class="active"><a href="${url}" data-load="ajax">Home</a></li>
                     <li class="active"><a href="${url}twitter.jsp" data-load="ajax">Twitter</a></li>
                     <li class="active"><a href="${url}blogs.jsp" data-load="ajax">Blog</a></li>
+                    <li class="active"><a href="${url}resets.jsp" data-load="ajax">Scope Resets</a></li>
                     <li class="active"><a href="${url}loads.jsp" data-load="ajax">Loads</a></li>
                     
                     <li> * </li>
