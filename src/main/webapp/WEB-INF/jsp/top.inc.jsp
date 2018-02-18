@@ -31,9 +31,10 @@
                             </c:when>
                             <c:otherwise>
 
-                            <li class="active"><a href="${url}auth_addReset.jsp" data-load="ajax">Add Scope Reset</a></li>
+                            <li class="active"><a href="${url}auth_addLoad.jsp" data-load="ajax">Add Load</a></li>
                             <li class="active"><a href="${url}auth_addRifle.jsp" data-load="ajax">Add Rifle</a></li>                            
-                            <li class="active"><a href="${url}auth_AddPost.jsp" data-load="ajax">Add Post</a></li>        
+                            <li class="active"><a href="${url}auth_AddPost.jsp" data-load="ajax">Add Post</a></li>       
+                            <li class="active"><a href="${url}auth_addReset.jsp" data-load="ajax">Add Scope Reset</a></li>
                             <li class="active"><a href="${url}logout.jsp">Logout-><c:out value="${sessionScope['loginUser']}" /></a></li>
                             </c:otherwise>
                         </c:choose>
