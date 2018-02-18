@@ -24,6 +24,7 @@
                     <li class="active"><a href="${url}resets.jsp" data-load="ajax">Scope Resets</a></li>
                     <li class="active"><a href="${url}loads.jsp" data-load="ajax">Loads</a></li>
                     
+                    
                     <li> * </li>
                         <c:choose>
                             <c:when test="${empty sessionScope['loginUser']}">
@@ -31,6 +32,7 @@
                             </c:when>
                             <c:otherwise>
 
+                            <li class="active"><a href="${url}auth_addReset.jsp" data-load="ajax">Add Scope Resets</a></li>
                             <li class="active"><a href="${url}contact.jsp" data-load="ajax">Contact</a></li>
                             <li class="active"><a href="${url}auth_AddPost.jsp" data-load="ajax">Add Post</a></li>        
                             <li class="active"><a href="${url}logout.jsp">Logout-><c:out value="${sessionScope['loginUser']}" /></a></li>

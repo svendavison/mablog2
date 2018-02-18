@@ -47,9 +47,6 @@
                     <div align="center">Avg Speed</div>
                 </th>
                 <th id="th">
-                    <div align="center">Name</div>
-                </th>
-                <th id="th">
                     <div align="center">Rifle Owner</div>
                 </th>
                 <th id="th">
@@ -66,7 +63,6 @@
                 <td id="td-even">${row.WindageClicks}</td>
                 <td id="td-even">${row.BulletWeightGR}</td>
                 <td id="td-even">${row.avgSpeed}</td>
-                <td id="td-even">${row.name}</td>
                 <td id="td-even">${row.rifleowner}</td>
                 <td id="td-even">${row.description}</td>
             </tr>
@@ -78,7 +74,6 @@
                 <td id="td-even">${row.WindageClicks}</td>
                 <td id="td-even">${row.BulletWeightGR}</td>
                 <td id="td-even">${row.avgSpeed}</td>
-                <td id="td-even">${row.name}</td>
                 <td id="td-even">${row.rifleowner}</td>
                 <td id="td-even">${row.description}</td>
             </tr>
