@@ -37,6 +37,8 @@
         <link rel="stylesheet" href="${url}css/tipsy.css" />
         <link rel="stylesheet" href="${url}css/sitemap.css" />
         <link rel="stylesheet" href="${url}css/w3.css" />
+        
+        <link rel="shortcut icon" href="${url}favicon.ico" />
 
     </head>
     <body>
