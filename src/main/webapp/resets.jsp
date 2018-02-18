@@ -18,7 +18,7 @@
 </sql:query>
 
 <%
-    String title = String.format("%s: Loads", ninja.sven.imrunicorn.Config.SITE_NAME);
+    String title = String.format("%s: Scope Resets", ninja.sven.imrunicorn.Config.SITE_NAME);
     request.setAttribute("pageTitle", title);
     request.setAttribute("pageHeading", title);
 %>
@@ -26,10 +26,10 @@
 <jsp:include page="/WEB-INF/jsp/header.inc.jsp"></jsp:include>
 
     <div class="center fadein">
-        <p>Print your load before you shoot it... <a href="extras/genericLabel.pdf">Generic Labels</a></p>
+        <p>Bottom out turrets then click back the clicks. Future marked confirmation dates are to be treated as non-confirmed values.</p>
 
 
-        <table width="85%" border="1" align="center">
+        <table width="90%" border="1" align="center">
             <tr>
                 <th id="th">
                     <div align="center">Last Confirmed</div>
@@ -45,9 +45,6 @@
                 </th>
                 <th id="th">
                     <div align="center">Avg Speed</div>
-                </th>
-                <th id="th">
-                    <div align="center">Name</div>
                 </th>
                 <th id="th">
                     <div align="center">Rifle Owner</div>
@@ -66,7 +63,6 @@
                 <td id="td-even">${row.WindageClicks}</td>
                 <td id="td-even">${row.BulletWeightGR}</td>
                 <td id="td-even">${row.avgSpeed}</td>
-                <td id="td-even">${row.name}</td>
                 <td id="td-even">${row.rifleowner}</td>
                 <td id="td-even">${row.description}</td>
             </tr>
@@ -78,7 +74,6 @@
                 <td id="td-even">${row.WindageClicks}</td>
                 <td id="td-even">${row.BulletWeightGR}</td>
                 <td id="td-even">${row.avgSpeed}</td>
-                <td id="td-even">${row.name}</td>
                 <td id="td-even">${row.rifleowner}</td>
                 <td id="td-even">${row.description}</td>
             </tr>

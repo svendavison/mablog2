@@ -4,3 +4,4 @@ target/
 *.prefs
 .project
 IMRUnicorn-1.6.9.war
+IMRUnicorn-1.7-SNAPSHOT.war
