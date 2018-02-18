@@ -28,17 +28,6 @@
 
 <jsp:include page="/WEB-INF/jsp/header.inc.jsp"></jsp:include>
 
-    <div align="center" class="myfade">RESTRICT ACCESS TO THIS PAGE</div>
-
-    <div align="center" class="myfade">
-        Adding reset for load id: ${param.loadId} under 
-    ${param.ownerName} [E-Clicks: ${param.eClicks}] [W-Clicks: ${param.wClicks}]
-</div>
-
-<div align="center" class="myfade">
-    Click <a href="${url}auth_addReset.jsp">here</a> to add another reset.
-</div>
-
 <c:choose>
     <c:when test="${empty sessionScope['loginUser']}">
         You need to login to save data. Sorry m8.
@@ -56,8 +45,13 @@
                     <sql:param value="${param.loadId}" />
                 </sql:update>
                 <c:if test="${updatedTable>=1}">
-                    <font size="5" color='green'> Congratulations ! Data inserted
-                    successfully.</font>
+                    <div align="center" class="myfade">
+                        <font size="5" color='green'> Congratulations ! Data inserted successfully.</font>
+                    </div>
+                    <div align="center" class="myfade">
+                        <br />Click <a href="${url}auth_addReset.jsp">here</a> to add another reset.
+                    </div>
+                    
                 </c:if>
             </c:catch>
             <c:if test="${exception!=null}">

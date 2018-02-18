@@ -29,10 +29,22 @@
         <p>Bottom out turrets then click back the clicks. Future marked confirmation dates are to be treated as non-confirmed values.</p>
 
 
-        <table width="90%" border="1" align="center">
+        <table width="95%" border="1" align="center">
             <tr>
                 <th id="th">
                     <div align="center">Last Confirmed</div>
+                </th>
+                <th id="th">
+                    <div align="center">Bullet Weight GR</div>
+                </th>
+                <th id="th">
+                    <div align="center">Proj. Name</div>
+                </th>
+                <th id="th">
+                    <div align="center">Avg Speed</div>
+                </th>
+                <th id="th">
+                    <div align="center">Description</div>
                 </th>
                 <th id="th">
                     <div align="center">Elevation Clicks</div>
@@ -41,17 +53,10 @@
                     <div align="center">Windage Clicks</div>
                 </th>
                 <th id="th">
-                    <div align="center">Bullet Weight GR</div>
-                </th>
-                <th id="th">
-                    <div align="center">Avg Speed</div>
-                </th>
-                <th id="th">
                     <div align="center">Rifle Owner</div>
                 </th>
-                <th id="th">
-                    <div align="center">Description</div>
-                </th>
+                
+                
             </tr>
 
         <% int rowNum = 0; %>
@@ -59,23 +64,25 @@
             <% if (rowNum % 2 == 0) {%>
             <tr>
                 <td id="td-even">${row.lastconfirmed}</td>
+                <td id="td-even">${row.BulletWeightGR}</td>
+                <td id="td-even">${row.ProjectileName}</td>
+                <td id="td-even">${row.avgSpeed}</td>
+                <td id="td-even">${row.description}</td>
                 <td id="td-even">${row.ElevationClicks}</td>
                 <td id="td-even">${row.WindageClicks}</td>
-                <td id="td-even">${row.BulletWeightGR}</td>
-                <td id="td-even">${row.avgSpeed}</td>
                 <td id="td-even">${row.rifleowner}</td>
-                <td id="td-even">${row.description}</td>
             </tr>
             <% } else {%>
 
             <tr>
-                <td id="td-even">${row.lastconfirmed}</td>
-                <td id="td-even">${row.ElevationClicks}</td>
-                <td id="td-even">${row.WindageClicks}</td>
-                <td id="td-even">${row.BulletWeightGR}</td>
-                <td id="td-even">${row.avgSpeed}</td>
-                <td id="td-even">${row.rifleowner}</td>
-                <td id="td-even">${row.description}</td>
+                <td id="td-odd">${row.lastconfirmed}</td>
+                <td id="td-odd">${row.BulletWeightGR}</td>
+                <td id="td-odd">${row.ProjectileName}</td>
+                <td id="td-odd">${row.avgSpeed}</td>
+                <td id="td-odd">${row.description}</td>
+                <td id="td-odd">${row.ElevationClicks}</td>
+                <td id="td-odd">${row.WindageClicks}</td>
+                <td id="td-odd">${row.rifleowner}</td>
             </tr>
             <% }
                 /* close IF */
