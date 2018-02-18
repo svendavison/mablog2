@@ -22,7 +22,7 @@
 <%@ page import ="java.sql.PreparedStatement" %>
 
 
-<div class="center fadein redshadow">
+<div class="center fadein">
     <p>
         <c:choose>
             <c:when test="${empty sessionScope['loginUser']}">
@@ -33,10 +33,11 @@
                 Adding your post.. hold tight bitch!</p>
 
                 <sql:update var="addUser" dataSource="jdbc/codeigniter">
-                    INSERT INTO blogEntry (title, body, description) VALUES (?, ?, ?)
+                    INSERT INTO blogEntry (title, body, description, imgpath) VALUES (?, ?, ?, ?)
                     <sql:param value="${param.p_title}" />
                     <sql:param value="${param.p_body}" />
                     <sql:param value="${param.p_desc}" />
+                    <sql:param value="${param.picPath}" />
                 </sql:update>
 
             </c:otherwise>

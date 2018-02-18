@@ -31,21 +31,21 @@
             <c:otherwise>
                 Hello <c:out value="${sessionScope['loginUser']}" />! We're going to do a sql insert...
 
-                <c:set var = "p_title" scope = "page" value = "Some Title"/>
-                <c:set var = "p_body" scope = "page" value = "This might work..."/>
-                <c:set var = "p_desc" scope = "page" value = "Google fo.."/>
-                
-                <sql:update var="addUser" dataSource="jdbc/codeigniter">
-                    INSERT INTO `codeigniter`.`blogEntry` (`title`, `body`,`description`) VALUES 
-                        ('${p_title}','${p_body}', '${p_desc}')
-                </sql:update>
-                        
-                        YAAAY! We did a SQL insert for ptitle= ${p_title}!
 
-            </c:otherwise>
-        </c:choose>
+            <form action = "auth_doAddPost.jsp" method = "POST">
+                Main Title:<input class="myreset" type = "text" name = "p_title" size="40" /><br />
+                Short Desc :<input class="myreset" type = "text" name = "p_desc" size="40" /><br />
+                Body:<br />
+                <textarea class="myreset" name="p_body" rows="10" cols="120">&lt;p&gt;Don't forget the open/close paragraph tags!&lt;/p&gt;
+                </textarea><br /><br />
+                <input class="myreset" type = "submit" value = "Add Post" />
+            </form>
 
-    </p>
+
+        </c:otherwise>
+    </c:choose>
+
+</p>
 </div>
 
 

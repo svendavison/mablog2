@@ -4,6 +4,8 @@
     Author     : svendavison
 --%>
 
+<%@page import="java.util.ArrayList"%>
+<%@page import="java.io.File"%>
 <%
     String title = String.format("%s: About", ninja.sven.imrunicorn.Config.SITE_NAME);
     request.setAttribute("pageTitle", title);
@@ -22,7 +24,7 @@
 <%@ page import ="java.sql.PreparedStatement" %>
 
 
-<div class="center fadein redshadow">
+<div class="center fadein">
     <p>
         <c:choose>
             <c:when test="${empty sessionScope['loginUser']}">
@@ -32,9 +34,30 @@
                 Hello <c:out value="${sessionScope['loginUser']}" />! We're going to do a sql insert...
 
 
+                <%
+                    File dir = new File("/usr/local/tomcat/webapps/IMRUnicorn/extras/");
+                    String[] files = dir.list();
+                    ArrayList<String> filteredFiles = new ArrayList();
+                    for (int i = 0; i < files.length; i++) {
+                        if (files[i].endsWith(".jpg") || files[i].endsWith("png")) {
+                            filteredFiles.add(String.format("/IMRUnicorn/extras/%s", files[i]));
+                        }
+                    }
+                    pageContext.setAttribute("imagePaths", filteredFiles);
+                %>
+
+
             <form action = "auth_doAddPost.jsp" method = "POST">
                 Main Title:<input class="myreset" type = "text" name = "p_title" size="40" /><br />
                 Short Desc :<input class="myreset" type = "text" name = "p_desc" size="40" /><br />
+                Picture Path: 
+                <select name="picPath" style="width:500px;">
+                    <option selected value="">NO BANNER</option>
+                    <c:forEach var="imagePath" items="${imagePaths}">
+                        <option value="${imagePath}">${imagePath}</option>
+                    </c:forEach>
+                </select><br />
+
                 Body:<br />
                 <textarea class="myreset" name="p_body" rows="10" cols="120">&lt;p&gt;Don't forget the open/close paragraph tags!&lt;/p&gt;
                 </textarea><br /><br />
