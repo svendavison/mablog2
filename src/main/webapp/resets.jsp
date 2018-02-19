@@ -55,6 +55,9 @@
                 <th id="th">
                     <div align="center">Rifle Owner</div>
                 </th>
+                <th id="th">
+                    <div align="center">Notes</div>
+                </th>
                 
                 
             </tr>
@@ -71,6 +74,7 @@
                 <td id="td-even">${row.ElevationClicks}</td>
                 <td id="td-even">${row.WindageClicks}</td>
                 <td id="td-even">${row.rifleowner}</td>
+                <td id="td-even">${row.notes}</td>
             </tr>
             <% } else {%>
 
@@ -83,6 +87,7 @@
                 <td id="td-odd">${row.ElevationClicks}</td>
                 <td id="td-odd">${row.WindageClicks}</td>
                 <td id="td-odd">${row.rifleowner}</td>
+                <td id="td-odd">${row.notes}</td>
             </tr>
             <% }
                 /* close IF */

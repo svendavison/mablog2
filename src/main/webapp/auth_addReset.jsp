@@ -48,11 +48,12 @@
                 <c:when test="${pageContext.request.method=='POST'}">
                     <c:catch var="exception">
                         <sql:update dataSource="jdbc/codeigniter" var="updatedTable">
-                            INSERT INTO scoperesets(clicksfrombottomelev,clicksfrombottomwind,rifleid,loadid) VALUES (?, ?, ?, ?)
+                            INSERT INTO scoperesets(clicksfrombottomelev,clicksfrombottomwind,rifleid,loadid, notes) VALUES (?, ?, ?, ?, ?)
                             <sql:param value="${param.eClicks}" />
                             <sql:param value="${param.wClicks}" />
                             <sql:param value="${param.rifleId}" />
                             <sql:param value="${param.loadId}" />
+                            <sql:param value="${param.notes}" />
                         </sql:update>
                         <c:if test="${updatedTable>=1}">
                             <div align="center" class="myfade">
@@ -86,6 +87,7 @@
 
                         Elevation Clicks:<br /> <input type="text" name="eClicks" size="3"><br />
                         Windage Clicks:<br /> <input type="text" name="wClicks" size="3"><br />
+                        Notes:<br /> <input type="text" name="notes" size="70"><br />
                         <br />
 
                         <input type="submit" value="Submit">
