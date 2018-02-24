@@ -87,10 +87,8 @@
 
                         <div class="w3-col m4 w3-hide-small">
                             <p><span class="w3-padding-large w3-right">
-
-                                    <a href="auth_editBlog.jsp?id=${row.id}">Edit</a>
-                                    <a href="auth_deleteBlog.jsp?id=${row.id}">Delete</a>
-                                    <b>Comments &nbsp;</b> <span class="w3-badge">&lt;disabled&gt;</span>
+                                    <span class="w3-badge"><a href="auth_editBlog.jsp?id=${row.id}">Edit</a></span>
+                                    <span class="w3-badge"><a href="auth_deleteBlog.jsp?id=${row.id}">Delete</a></span>
                                 </span>
                             </p>
                         </div>

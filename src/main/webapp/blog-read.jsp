@@ -20,7 +20,7 @@
 
 
 <sql:query var="rs" dataSource="jdbc/codeigniter">
-    select * from blogEntry where id = <%= request.getParameter("id") %>
+    select * from blogEntry where id = <%= request.getParameter("id")%>
 </sql:query>
 
 <%
@@ -36,35 +36,33 @@
         <div class="w3-row" style="width:70%;">
 
         <c:forEach var="row" items="${rs.rows}">
-    <!-- Blog entry -->
-        <div class="w3-card-4 w3-margin w3-white">
-            <img src="${row.imgpath}" alt="${row.imgpathalttext}" style="width:100%">
-            <div class="w3-container">
-                <h3><b>${row.title}</b></h3>
-                <h5>${row.description} -- <span class="w3-opacity">${row.publishDate}</span></h5>
-            </div>
+            <!-- Blog entry -->
+            <div class="w3-card-4 w3-margin w3-white">
+                <img src="${row.imgpath}" alt="${row.imgpathalttext}" style="width:100%">
+                <div class="w3-container">
+                    <h3><b>${row.title}</b></h3>
+                    <h5>${row.description} -- <span class="w3-opacity">${row.publishDate}</span></h5>
+                </div>
 
-            <div class="w3-container">
-                <p>${row.body}</p>
-                <div class="w3-row">
-                    <div class="w3-col m8 s12">
-                        &nbsp;
-                    </div>
-                    <div class="w3-col m4 w3-hide-small">
-                        <p><span class="w3-padding-large w3-right">
-
-                                    <a href="auth_editBlog.jsp?id=${row.id}">Edit</a>
-                                    <a href="auth_deleteBlog.jsp?id=${row.id}">Delete</a>
-                                    <b>Comments &nbsp;</b> <span class="w3-badge">&lt;disabled&gt;</span>
+                <div class="w3-container">
+                    <p>${row.body}</p>
+                    <div class="w3-row">
+                        <div class="w3-col m8 s12">
+                            &nbsp;
+                        </div>
+                        <div class="w3-col m4 w3-hide-small">
+                            <p><span class="w3-padding-large w3-right">
+                                    <span class="w3-badge"><a href="auth_editBlog.jsp?id=${row.id}">Edit</a></span>
+                                    <span class="w3-badge"><a href="auth_deleteBlog.jsp?id=${row.id}">Delete</a></span>
                                 </span>
                             </p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- END BLOG ENTRIES -->
+            <!-- END BLOG ENTRIES -->
         </c:forEach>
-        
+
     </div>
 </div>
 
