@@ -108,7 +108,7 @@
 
             <tr>
                 <td id="td-odd">${row.name}</td>
-                <td id="td-even">${row.barrelLenInches}</td>
+                <td id="td-odd">${row.barrelLenInches}</td>
                 <td id="td-odd">${row.GroupSize}</td>
                 <td id="td-odd">${row.ProjectileName}</td>
                 <td id="td-odd">${row.BulletWeightGR}</td>
