@@ -77,7 +77,7 @@
                                 <option value="${row.id}">${row.rifleowner} - ${row.description}</option>
                             </c:forEach>
                         </select><br />
-
+ 
                         Select a load<br />
                         <select name="loadId" style="width:500px;">
                             <c:forEach var="row" items="${rsAllMyLoads.rows}">

@@ -45,7 +45,7 @@
         PRIMARY KEY (`id`))
     </sql:update> 
 </c:catch>
- 
+
 <c:catch var="alreadyExists">
     <sql:query var="rs" dataSource="jdbc/codeigniter">
         select * from blogEntry order by id desc limit 15
@@ -86,7 +86,12 @@
                         </div>
 
                         <div class="w3-col m4 w3-hide-small">
-                            <p><span class="w3-padding-large w3-right"><b>Comments &nbsp;</b> <span class="w3-badge">&lt;disabled&gt;</span></span>
+                            <p><span class="w3-padding-large w3-right">
+
+                                    <a href="auth_editBlog.jsp?id=${row.id}">Edit</a>
+                                    <a href="auth_deleteBlog.jsp?id=${row.id}">Delete</a>
+                                    <b>Comments &nbsp;</b> <span class="w3-badge">&lt;disabled&gt;</span>
+                                </span>
                             </p>
                         </div>
                     </div>
