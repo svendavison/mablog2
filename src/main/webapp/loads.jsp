@@ -43,7 +43,7 @@
 
 <c:catch var="notable">
     <sql:query var="rs" dataSource="jdbc/codeigniter">
-        select name, barrelLenInches, GroupSize, ProjectileName, BulletWeightGR, Powder, GrainsUsed, avgSpeed, EnergyFootLBS from AllMyLoads
+        select name, barrelLenInches, GroupSize, ProjectileName, BulletWeightGR, Powder, GrainsUsed, avgSpeed, EnergyFootLBS from AllMyLoads order by name, avgSpeed
     </sql:query>
 </c:catch>
 
