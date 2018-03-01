@@ -12,7 +12,7 @@
 
 <%@ taglib uri="http://java.sun.com/jsp/jstl/sql" prefix="sql" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-
+ 
 <sql:query var="rsRifles" dataSource="jdbc/codeigniter">
     select * from rifles;
 </sql:query>
