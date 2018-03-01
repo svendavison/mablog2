@@ -7,7 +7,7 @@
 <%@page import="java.util.ArrayList"%>
 <%@page import="java.io.File"%>
 <%
-    String title = String.format("%s: About", ninja.sven.imrunicorn.Config.SITE_NAME);
+    String title = String.format("%s: Add Post", ninja.sven.imrunicorn.Config.SITE_NAME);
     request.setAttribute("pageTitle", title);
     request.setAttribute("pageHeading", title);
 %>
