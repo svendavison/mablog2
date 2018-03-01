@@ -71,14 +71,13 @@
                             </c:forEach>
                         </select><br /><br /> 
                         
-                        Name:<br /> <input type="text" name="name" size="15"><br />
-                        Projectile Name:<br /> <input type="text" name="projectileName" size="15"><br />
-                        BulletWeightGR:<br /> <input type="text" name="bulletWeightGR" size="15"><br />
-                        Powder:<br /> <input type="text" name="powder" size="15"><br />
-                        GrainsUsed:<br /> <input type="text" name="grainsUsed" size="15"><br />
-                        Average Speed:<br /> <input type="text" name="avgSpeed" size="15"><br />
-                        Energy ft-lb:<br /> <input type="text" name="energyFootLBS" size="15"><br />
-                        
+                        Caliber Name:<br /> <input type="text" name="name" size="15" value=".223 Wylde"><br />
+                        Projectile Name:<br /> <input type="text" name="projectileName" size="15" value="varmint grenade"><br />
+                        BulletWeightGR:<br /> <input type="text" name="bulletWeightGR" size="15" value="50"><br />
+                        GrainsUsed:<br /> <input type="text" name="grainsUsed" size="15" value="22"><br />
+                        Powder:<br /> <input type="text" name="powder" size="15" value="IMR 3031"><br />
+                        Average Speed:<br /> <input type="text" name="avgSpeed" size="15" value="100"><br />
+                        Energy ft-lb:<br /> <input type="text" name="energyFootLBS" size="15" value="40"><br />
                         <br />
 
                         <input type="submit" value="Submit">
