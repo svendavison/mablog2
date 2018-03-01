@@ -39,6 +39,7 @@
                     <sql:param value="${param.p_desc}" />
                     <sql:param value="${param.picPath}" />
                 </sql:update>
+                    <c:redirect url="/blogs.jsp" />
 
             </c:otherwise>
         </c:choose>

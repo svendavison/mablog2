@@ -65,6 +65,7 @@
                 </sql:update>
                     Deleted blog id: <%= request.getParameter("id") %>.
 
+                    <c:redirect url="/blogs.jsp" />
             </c:otherwise>
         </c:choose>
     </div>
