@@ -109,6 +109,7 @@
                                 Picture Path: 
                                 <select name="picPath" style="width:500px;">
                                     <option selected value="${row.imgpath}">${row.imgpath}</option>
+                                    <option value="">NO BANNER</option>
                                     <c:forEach var="imagePath" items="${imagePaths}">
                                         <option value="${imagePath}">${imagePath}</option>
                                     </c:forEach>
