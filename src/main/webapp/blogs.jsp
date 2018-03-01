@@ -85,13 +85,26 @@
 
                         </div>
 
-                        <div class="w3-col m4 w3-hide-small">
-                            <p><span class="w3-padding-large w3-right">
-                                    <span class="w3-badge"><a href="auth_editBlog.jsp?id=${row.id}">Edit</a></span>
-                                    <span class="w3-badge"><a href="auth_deleteBlog.jsp?id=${row.id}">Delete</a></span>
-                                </span>
-                            </p>
-                        </div>
+                        <c:choose>
+                            <c:when test="${empty sessionScope['loginUser']}">
+                                <!-- do nothing, you must be logged in -->
+                            </c:when>
+                            <c:otherwise>
+                                <div class="w3-col m4 w3-hide-small">
+                                <p><span class="w3-padding-large w3-right">
+                                        <a href="auth_editBlog.jsp?id=${row.id}"><i class="far fa-edit" style="color:blue"></i></a> &nbsp; - &nbsp;
+                                        <a href="auth_deleteBlog.jsp?id=${row.id}"><i class="far fa-trash-alt" style="color:blue"></i></a>
+                                        <!--
+                                        <span class="w3-badge"><a href="auth_editBlog.jsp?id=0">Edit</a></span>
+                                        <span class="w3-badge"><a href="auth_deleteBlog.jsp?id=0">Delete</a></span>
+                                        -->
+                                    </span>
+                                </p>
+                            </div>
+                            </c:otherwise>
+                        </c:choose>
+
+
                     </div>
                 </div>
             </div>
