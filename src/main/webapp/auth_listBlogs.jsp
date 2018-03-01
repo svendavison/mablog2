@@ -87,8 +87,8 @@
                             <td id="td-even">${row.description}</td>
                             <td id="td-even">${fn:substring(fullBody, 0, bodyLenMax)}</td>
 
-                            <td id="td-even"><a href="auth_editBlog.jsp?id=${row.id}">[EDIT]</a></td>
-                            <td id="td-even"><a href="auth_deleteBlog.jsp?id=${row.id}">[DELETE]</a></td>
+                            <td id="td-even" style="text-align: center"><a href="auth_editBlog.jsp?id=${row.id}"><i class="far fa-edit" style="color:blue"></i></a></td>
+                            <td id="td-even" style="text-align: center"><a href="auth_deleteBlog.jsp?id=${row.id}"><i class="far fa-trash-alt" style="color:blue"></i></a></td>
                         </tr>
                         <!-- END BLOG ENTRIES -->  
                         <% } else { %>
@@ -99,8 +99,8 @@
                             <td id="td-odd">${row.description}</td>
                             <td id="td-odd">${fn:substring(fullBody, 0, bodyLenMax)}</td>
 
-                            <td id="td-odd"><a href="auth_editBlog.jsp?id=${row.id}">[EDIT]</a></td>
-                            <td id="td-odd"><a href="auth_deleteBlog.jsp?id=${row.id}">[DELETE]</a></td>
+                            <td id="td-odd" style="text-align: center"><a href="auth_editBlog.jsp?id=${row.id}"><i class="far fa-edit" style="color:blue"></i></a></td>
+                            <td id="td-odd" style="text-align: center"><a href="auth_deleteBlog.jsp?id=${row.id}"><i class="far fa-trash-alt" style="color:blue"></i></a></td>
                         </tr>
                         <!-- END BLOG ENTRIES -->  
                         <% }%>

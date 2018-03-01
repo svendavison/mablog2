@@ -3,6 +3,7 @@
     Created on : Jul 4, 2017, 1:59:14 PM
     Author     : svendavison
 --%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 
 <%
@@ -19,7 +20,7 @@
     You've been logged out!
     <% session.removeAttribute("loginUser"); %>
 
-    <meta http-equiv="refresh" content="2;URL=${url}">
+<c:redirect url="/" />
 
 
 </p>
