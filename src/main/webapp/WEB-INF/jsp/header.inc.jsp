@@ -39,6 +39,9 @@
         <link rel="stylesheet" href="${url}css/w3.css" />
         
         <link rel="shortcut icon" href="${url}favicon.ico" />
+        
+        <!-- font awesome -->
+        <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 
     </head>
     <body>
