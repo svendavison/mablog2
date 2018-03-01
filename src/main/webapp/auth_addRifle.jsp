@@ -19,7 +19,7 @@
 
 
 <%
-    String title = String.format("%s: Add Reset", ninja.sven.imrunicorn.Config.SITE_NAME);
+    String title = String.format("%s: Add Rifle", ninja.sven.imrunicorn.Config.SITE_NAME);
     request.setAttribute("pageTitle", title);
     request.setAttribute("pageHeading", title);
 %>
